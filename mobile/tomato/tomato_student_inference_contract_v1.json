@@ -1,0 +1,44 @@
+{
+  "contract_name": "tomato_mobile_student_inference_contract_v1",
+  "version": "1.0.0",
+  "target_crop": "tomato",
+  "model_role": "primary_mobile_production_candidate",
+  "model_file": "mobile/tomato/tomato_student_float16.tflite",
+  "sha256": "5e62ddea53fe60a62c37db50097036bb38bddf5a47e1328c0917729d41f584bd",
+  "binary_size_bytes": 6053452,
+  "input_shape": [1, 300, 300, 3],
+  "input_dtype": "float32",
+  "input_pixel_range": [0.0, 255.0],
+  "color_order": "RGB",
+  "output_shape": [1, 3],
+  "output_dtype": "float32",
+  "class_order": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "preprocessing": {
+    "strategy": "aspect_preserving_letterbox",
+    "fill_color_rgb": [114, 114, 114],
+    "interpolation": "area"
+  },
+  "runtime_thresholds": {
+    "confidence_min_threshold": 0.70,
+    "confidence_min_margin": 0.30,
+    "foliage_coverage_percent_min": 15.0,
+    "blur_laplacian_variance_min": 100.0
+  },
+  "camerax_viewfinder_contract": {
+    "reticle_shape": "square",
+    "reticle_relative_dimensions": [0.50, 0.50],
+    "reticle_center_coordinate": [0.50, 0.50],
+    "standoff_distance_cm": [15.0, 25.0],
+    "min_lesion_fill_percent": 25.0
+  },
+  "abstention_prompts": {
+    "unsupported_foliage": "Insufficient tomato foliage detected (< 15%). Point camera directly at a tomato leaf.",
+    "unsupported_blur": "Camera motion blur detected. Hold the device steady and focus on foliar lesions.",
+    "uncertain_margin": "Foliar pattern ambiguous between Early and Late Blight. Inspect under natural diffuse light or consult a plant pathologist.",
+    "field_illumination": "Excessive glare or severe shadow detected. Shield leaf from direct harsh sunlight."
+  }
+}

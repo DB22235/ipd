@@ -67,13 +67,23 @@
       "role": "cloud_teacher_v2",
       "path": "models\\tomato\\teachers\\v2\\teacher_best.keras",
       "exists": true,
-      "violations": [
-        "Keras load error: <class 'keras.src.models.functional.Functional'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.\n\nconfig={'module': 'keras.src.models.functional', 'class_name': 'Functional', 'config': {}, 'registered_name': 'Functional', 'build_config': {'input_shape': None}, 'compile_config': None}.\n\nException encountered: <class 'keras.src.layers.convolutional.conv2d.Conv2D'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.\n\nconfig={'module': 'keras.layers', 'class_name': 'Conv2D', 'config': {'name': 'stem_conv', 'trainable': False, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None, 'shared_object_id': 2028980822640}, 'filters': 40, 'kernel_size': [3, 3], 'strides': [2, 2], 'padding': 'valid', 'data_format': 'channels_last', 'dilation_rate': [1, 1], 'groups': 1, 'activation': 'linear', 'use_bias': False, 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'VarianceScaling', 'config': {'seed': None, 'scale': 2.0, 'mode': 'fan_out', 'distribution': 'truncated_normal', 'input_axes': None, 'output_axes': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}, 'registered_name': None, 'build_config': {'input_shape': [None, 301, 301, 3]}, 'name': 'stem_conv', 'inbound_nodes': [{'args': [{'class_name': '__keras_tensor__', 'config': {'shape': [None, 301, 301, 3], 'dtype': 'float32', 'keras_history': ['stem_conv_pad', 0, 0]}}], 'kwargs': {}}]}.\n\nException encountered: Error when deserializing class 'Conv2D' using config={'name': 'stem_conv', 'trainable': False, 'dtype': 'float32', 'filters': 40, 'kernel_size': [3, 3], 'strides': [2, 2], 'padding': 'valid', 'data_format': 'channels_last', 'dilation_rate': [1, 1], 'groups': 1, 'activation': 'linear', 'use_bias': False, 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'VarianceScaling', 'config': {'seed': None, 'scale': 2.0, 'mode': 'fan_out', 'distribution': 'truncated_normal', 'input_axes': None, 'output_axes': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}.\n\nException encountered: <class 'keras.src.initializers.random_initializers.VarianceScaling'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.\n\nconfig={'module': 'keras.initializers', 'class_name': 'VarianceScaling', 'config': {'seed': None, 'scale': 2.0, 'mode': 'fan_out', 'distribution': 'truncated_normal', 'input_axes': None, 'output_axes': None}, 'registered_name': None}.\n\nException encountered: VarianceScaling.__init__() got an unexpected keyword argument 'input_axes'"
-      ],
+      "violations": [],
       "sha256": "a7ae01a229778efbb9ce5b25da7e8cdc20f045d18a22b3bdae4325225b0c848e",
       "size_mb": 74.4,
+      "input_shape": [
+        null,
+        300,
+        300,
+        3
+      ],
+      "output_shape": [
+        null,
+        3
+      ],
+      "total_params": 10788146,
+      "runtime_status": "LOADED_OK",
       "manifest_verified": true,
-      "status": "VIOLATION"
+      "status": "VERIFIED_COMPLIANT"
     },
     {
       "crop": "tomato",

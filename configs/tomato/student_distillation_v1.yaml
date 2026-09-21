@@ -1,0 +1,59 @@
+# configs/tomato/student_distillation_v1.yaml
+# Production Configuration for Tomato Mobile Student Knowledge Distillation
+# Governing Specification: plans/IPD Post-GitHub Next-Step Execution Plan.md (Section 11)
+
+experiment_name: "tomato_student_distilled_v1"
+crop: "tomato"
+seed: 42
+
+model:
+  architecture: "MobileNetV3-Large"
+  input_shape: [300, 300, 3]
+  num_classes: 3
+  classes:
+    - "early_blight"
+    - "healthy"
+    - "late_blight"
+  student_weights: "imagenet"
+  dropout_rate: 0.25
+
+teacher:
+  model_path: "models/tomato/teachers/v2/teacher_best.keras"
+  sha256: "a7ae01a229778efbb9ce5b25da7e8cdc20f045d18a22b3bdae4325225b0c848e"
+  frozen: true
+
+distillation:
+  temperature: 4.0        # Softens teacher logits to expose cross-class foliar relationships
+  alpha: 0.3              # Weight on hard CE loss; (1 - alpha) = 0.7 on soft KL divergence loss
+  use_class_weights: true # Balanced inverse frequency weights on hard CE loss
+
+training:
+  batch_size: 16          # RTX 3060/4050 6GB VRAM safety envelope
+  mixed_precision: false  # Pure float32 for deterministic portability
+  stage_a:
+    name: "head_warmup"
+    epochs: 5
+    lr: 0.001
+    weight_decay: 0.0001
+    backbone_frozen: true
+  stage_b:
+    name: "fine_tuning"
+    epochs: 15
+    lr: 0.0001
+    min_lr: 0.00001
+    weight_decay: 0.0001
+    unfreeze_layers: 40
+    freeze_batchnorm: true
+
+data:
+  split_manifest: "manifests/tomato/teacher_v2/split_manifest.csv"
+  external_field_holdout: "manifests/tomato/teacher_v2/external_field_holdout.csv"
+  preprocessing:
+    target_size: [300, 300]
+    letterbox_pad_color: [114, 114, 114]
+    interpolation: "area"
+
+outputs:
+  output_dir: "models/tomato/students/distilled_v1"
+  checkpoint_name: "student_best.keras"
+  reports_dir: "reports/tomato/student_distilled_v1"

@@ -12,7 +12,7 @@
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Potato** | `mobile_student` | `mobile\potato\supervised_mobilenetv3_float16.tflite` | 5.76 MB | [1, 224, 224, 3] | [1, 3] | `f3b3620ea336...` | MATCH | **VERIFIED_COMPLIANT** |
 | **Rice** | `mobile_student` | `mobile\rice\supervised_mobilenetv3_float16.tflite` | 5.82 MB | [1, 224, 224, 3] | [1, 4] | `1ee496ec5533...` | MATCH | **VERIFIED_COMPLIANT** |
-| **Tomato** | `cloud_teacher_v2` | `models\tomato\teachers\v2\teacher_best.keras` | 74.4 MB | N/A | N/A | `a7ae01a22977...` | MATCH | **VIOLATION** |
+| **Tomato** | `cloud_teacher_v2` | `models\tomato\teachers\v2\teacher_best.keras` | 74.4 MB | [None, 300, 300, 3] | [None, 3] | `a7ae01a22977...` | MATCH | **VERIFIED_COMPLIANT** |
 | **Tomato** | `mobile_student_supervised_v1` | `mobile\tomato\tomato_student_float16.tflite` | 5.77 MB | [1, 300, 300, 3] | [1, 3] | `5e62ddea53fe...` | MATCH | **VERIFIED_COMPLIANT** |
 
 ---

@@ -23,10 +23,16 @@ os.environ["KERAS_BACKEND"] = "tensorflow"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
 OUTPUT_DIR = ROOT_DIR / "reports/project"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 import tensorflow as tf
+import keras
+import src.keras_compat
+
 
 
 def compute_sha256(file_path: Path) -> str:
@@ -202,7 +208,10 @@ def verify_crop_contracts():
         elif model_path.suffix == ".keras":
             rec["size_mb"] = round(model_path.stat().st_size / (1024 * 1024), 2)
             try:
-                k_model = tf.keras.models.load_model(str(model_path), compile=False)
+                try:
+                    k_model = keras.models.load_model(str(model_path), compile=False)
+                except Exception:
+                    k_model = tf.keras.models.load_model(str(model_path), compile=False)
                 rec["input_shape"] = list(k_model.input_shape)
                 rec["output_shape"] = list(k_model.output_shape)
                 rec["total_params"] = k_model.count_params()
