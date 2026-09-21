@@ -1,0 +1,97 @@
+{
+  "registry_version": "1.0.0",
+  "crop": "potato",
+  "model_id": "potato_student_mobilenetv3_supervised_v1",
+  "model_role": "supervised_mobile_student",
+  "architecture": "MobileNetV3-Large",
+  "framework": "Keras 3 / TensorFlow 2.18",
+  "total_parameters": 2999235,
+  "input_contract": {
+    "dimensions": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "input_dtype": "uint8",
+    "value_range": [
+      0,
+      255
+    ],
+    "color_space": "RGB",
+    "preprocessing_canvas": "Aspect-preserving letterbox with fill (114, 114, 114)",
+    "double_rescaling_protection": "Embedded Rescaling(scale=1.0, dtype='float32') casts uint8 to float32 without dividing by 255.0, preserving raw range for MobileNetV3 native preprocessing."
+  },
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "class_to_idx": {
+    "early_blight": 0,
+    "healthy": 1,
+    "late_blight": 2
+  },
+  "artifacts": {
+    "primary_mobile_candidate": {
+      "format": "float16",
+      "filename": "supervised_mobilenetv3_float16.tflite",
+      "path": "mobile/potato/supervised_mobilenetv3_float16.tflite",
+      "size_bytes": 6044712,
+      "size_mb": 5.76,
+      "sha256": "f3b3620ea3363f5503da92d89a41ed7316b242d4447015bf59ec5efd416ad83c",
+      "locked_test_accuracy": 0.9943,
+      "locked_test_macro_f1": 0.9943,
+      "brier_score": 0.0099,
+      "ece_calibration": 0.0056,
+      "decision_parity_with_keras": 1.0,
+      "release_status": "prototype_candidate"
+    },
+    "source_keras_checkpoint": {
+      "format": "keras",
+      "filename": "student_best.keras",
+      "path": "models/potato/student_baselines/run_001/student_best.keras",
+      "size_bytes": 36610654,
+      "size_mb": 34.91,
+      "sha256": "22c102f7b8eadb7326a60a6ab242fd8c558a729dba1a98384d66f53be1d1f9c0",
+      "training_run": "run_001",
+      "training_hardware": "CPU Intel oneDNN 12-thread RAM preloaded",
+      "total_epochs": 29,
+      "best_val_loss": 0.00124,
+      "best_val_accuracy": 1.0
+    },
+    "alternative_float32": {
+      "format": "float32",
+      "filename": "supervised_mobilenetv3_float32.tflite",
+      "path": "mobile/potato/supervised_mobilenetv3_float32.tflite",
+      "size_bytes": 11930860,
+      "size_mb": 11.38,
+      "sha256": "3919d2ede60abdf297643557622327f13e61fd7cae96f781f1c60fbbceb9743b"
+    },
+    "alternative_int8": {
+      "format": "int8",
+      "filename": "supervised_mobilenetv3_int8.tflite",
+      "path": "mobile/potato/supervised_mobilenetv3_int8.tflite",
+      "size_bytes": 3517064,
+      "size_mb": 3.35,
+      "sha256": "d1e833dd3ee5f293e71a5e7c77f87598e5d5b430e2aa15666fd26371baf9b498",
+      "status": "experimental"
+    }
+  },
+  "provenance": {
+    "dataset_version": "PlantVillage/Kaggle clean potato dataset v1.0",
+    "split_version": "potato_split_manifest_v1",
+    "split_manifest_sha256": "15dda67083c6f1c8a93a0633934a6004e6fdc07dc73d1d94b283c8c3ed047b15",
+    "split_rule": "Group-isolated pHash clustering (threshold <= 4) with multi-bucket proportional deficit allocation (70% train, 15% val, 15% test). Zero exact or group leakage.",
+    "conversion_agreement_manifest": "manifests/potato/conversion_agreement_manifest.csv",
+    "field_validation": "Incomplete (laboratory background benchmark)",
+    "distillation_performed": false,
+    "release_status": "prototype_candidate"
+  },
+  "abstention_thresholds": {
+    "foliage_ratio_min": 0.05,
+    "blur_laplacian_var_min": 40.0,
+    "confidence_threshold": 0.6,
+    "margin_gap_threshold": 0.2
+  }
+}

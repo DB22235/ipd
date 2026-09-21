@@ -1,0 +1,132 @@
+# ==============================================================================
+# IPD Plant Disease Detection System - Git Ignore Configuration
+# Governing Plan: IPD Model Improvement: Prioritized Execution Plan (Manus AI Sec 3.2)
+# ==============================================================================
+
+# --- Operating System Artifacts ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- IDE & Editor Specific Files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Python & Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Local Configuration & Secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# --- Datasets & Raw Media (Keep Datasets Outside Git) ---
+data/
+dataset/
+datasets/
+raw_data/
+clean_dataset/
+finaldataset/
+finaldataset.zip
+bounding_box_dataset/
+Rice___Healthy/
+[Rr]ice*[Hh]ealthy*/
+archive/raw_unprocessed/
+archive.zip
+field_data/
+field_test_images/
+uploads/
+
+# Archive Formats
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Raw image media (Do not commit image trees)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.JPG
+*.JPEG
+*.PNG
+*.WEBP
+*.bmp
+*.tif
+*.tiff
+
+# Preserve specific report data if explicitly committed
+!audit_reports/*.json
+
+# --- Model Artifacts, Weights & Checkpoints (Keep Weights Outside Git) ---
+*.h5
+*.hdf5
+*.keras
+*.tflite
+*.pb
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.ckpt.*
+*.weights.h5
+checkpoints/
+saved_models/
+export/
+exports/
+conversions/
+models/**/*.keras
+models/**/*.tflite
+mobile/**/*.tflite
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- Logs, Metrics & Profiler Dumps ---
+logs/
+log/
+runtime_logs/
+runs/
+wandb/
+tensorboard/
+mlruns/
+*.log
+*.sqlite
+tmp/
+temp/
+
+# --- Build & Distribution Output ---
+build/
+dist/
+*.egg-info/
+*.whl
+.coverage
+coverage.xml
+htmlcov/

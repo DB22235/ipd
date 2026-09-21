@@ -1,0 +1,9 @@
+{
+  "model_role": "student_baseline",
+  "teacher_checkpoint_loaded_in_training": false,
+  "distillation_loss_used": false,
+  "hard_ground_truth_labels_only": true,
+  "weights_initialization": "ImageNet (Pretrained Backbone)",
+  "rice_teacher_weight_leakage": false,
+  "status": "PASS"
+}

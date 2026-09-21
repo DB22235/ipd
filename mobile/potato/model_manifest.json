@@ -1,0 +1,63 @@
+{
+  "crop": "potato",
+  "model_name": "potato_student_mobilenetv3_large",
+  "architecture": "MobileNetV3-Large",
+  "total_parameters": 2999235,
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "uint8",
+  "pixel_range": [
+    0,
+    255
+  ],
+  "color_format": "RGB",
+  "letterbox_fill": [
+    114,
+    114,
+    114
+  ],
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "num_classes": 3,
+  "class_to_idx": {
+    "early_blight": 0,
+    "healthy": 1,
+    "late_blight": 2
+  },
+  "primary_candidate": {
+    "format": "float16",
+    "filename": "supervised_mobilenetv3_float16.tflite",
+    "size_mb": 5.76,
+    "sha256": "f3b3620ea3363f5503da92d89a41ed7316b242d4447015bf59ec5efd416ad83c",
+    "test_accuracy": 0.9943,
+    "test_macro_f1": 0.9943,
+    "brier_score": 0.0099,
+    "ece_calibration": 0.0056,
+    "decision_parity_with_keras": 1.0
+  },
+  "alternative_candidates": {
+    "float32": {
+      "filename": "supervised_mobilenetv3_float32.tflite",
+      "size_mb": 11.38,
+      "sha256": "3919d2ede60abdf297643557622327f13e61fd7cae96f781f1c60fbbceb9743b"
+    },
+    "int8": {
+      "filename": "supervised_mobilenetv3_int8.tflite",
+      "size_mb": 3.35,
+      "sha256": "d1e833dd3ee5f293e71a5e7c77f87598e5d5b430e2aa15666fd26371baf9b498"
+    }
+  },
+  "abstention_thresholds": {
+    "foliage_ratio_min": 0.05,
+    "blur_laplacian_var_min": 40.0,
+    "confidence_threshold": 0.6,
+    "margin_gap_threshold": 0.2
+  }
+}

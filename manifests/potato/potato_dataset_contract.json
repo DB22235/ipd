@@ -1,0 +1,41 @@
+{
+  "crop": "potato",
+  "contract_version": "1.0.0",
+  "num_classes": 3,
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "class_to_idx": {
+    "early_blight": 0,
+    "healthy": 1,
+    "late_blight": 2
+  },
+  "class_order_rule": "Strict index mapping: early_blight=0, healthy=1, late_blight=2. Never sort filesystem.",
+  "input_shape_student": [
+    224,
+    224,
+    3
+  ],
+  "input_shape_teacher": [
+    300,
+    300,
+    3
+  ],
+  "pixel_normalization": "Keras builtin Rescaling 1/255 + ImageNet Normalization, aspect-preserving letterbox with fill (114, 114, 114)",
+  "split_manifest_file": "manifests/potato/potato_split_manifest_v1.csv",
+  "split_manifest_sha256": "15dda67083c6f1c8a93a0633934a6004e6fdc07dc73d1d94b283c8c3ed047b15",
+  "total_samples": 6972,
+  "split_counts": {
+    "train": 4878,
+    "test": 1049,
+    "val": 1045
+  },
+  "class_counts": {
+    "early_blight": 2627,
+    "late_blight": 2481,
+    "healthy": 1864
+  },
+  "healthy_trap_mitigation": "Perceptual hash cluster isolation enabled. All augmented healthy leaves locked in single splits."
+}

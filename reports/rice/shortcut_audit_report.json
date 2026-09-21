@@ -1,0 +1,774 @@
+{
+  "audit_name": "rice_teacher_causal_shortcut_audit",
+  "model": "rice_teacher_efficientnetb3_best.keras",
+  "sample_count": 20,
+  "metrics": {
+    "background_flip_rate": 0.0,
+    "background_invariance_status": "PASS",
+    "lesion_sensitivity_rate": 0.1333,
+    "biological_causality_status": "WARNING"
+  },
+  "verdict": "Model demonstrates high causal invariance to background perturbations and responds strongly to lesion presence.",
+  "samples": [
+    {
+      "image_id": "blast_test_00001.jpg",
+      "ground_truth": "blast",
+      "baseline_prediction": "blast",
+      "baseline_confidence": 1.0,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blast",
+          "confidence": 0.977,
+          "target_class_conf_delta": -0.023,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blast",
+          "confidence": 0.9997,
+          "target_class_conf_delta": -0.0003,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "blast_train_00107.jpg",
+      "ground_truth": "blast",
+      "baseline_prediction": "blast",
+      "baseline_confidence": 0.9988,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0011,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blast",
+          "confidence": 0.9993,
+          "target_class_conf_delta": 0.0005,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blast",
+          "confidence": 0.9996,
+          "target_class_conf_delta": 0.0008,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blast",
+          "confidence": 0.9997,
+          "target_class_conf_delta": 0.0009,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blast",
+          "confidence": 0.9683,
+          "target_class_conf_delta": -0.0305,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "blast_train_00262.jpg",
+      "ground_truth": "blast",
+      "baseline_prediction": "blast",
+      "baseline_confidence": 1.0,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blast",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blast",
+          "confidence": 0.9458,
+          "target_class_conf_delta": -0.0542,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "blast_train_00458.jpg",
+      "ground_truth": "blast",
+      "baseline_prediction": "blast",
+      "baseline_confidence": 0.9974,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blast",
+          "confidence": 0.9985,
+          "target_class_conf_delta": 0.0011,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blast",
+          "confidence": 0.9904,
+          "target_class_conf_delta": -0.007,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blast",
+          "confidence": 0.9987,
+          "target_class_conf_delta": 0.0013,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blast",
+          "confidence": 0.9965,
+          "target_class_conf_delta": -0.0009,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blast",
+          "confidence": 0.8983,
+          "target_class_conf_delta": -0.0991,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "blast_train_00595.jpg",
+      "ground_truth": "blast",
+      "baseline_prediction": "blast",
+      "baseline_confidence": 0.9992,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blast",
+          "confidence": 0.9996,
+          "target_class_conf_delta": 0.0003,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blast",
+          "confidence": 0.9948,
+          "target_class_conf_delta": -0.0044,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blast",
+          "confidence": 0.9996,
+          "target_class_conf_delta": 0.0004,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blast",
+          "confidence": 0.9988,
+          "target_class_conf_delta": -0.0004,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.4964,
+          "target_class_conf_delta": -0.539,
+          "class_flip": true
+        }
+      }
+    },
+    {
+      "image_id": "blight_test_00002.jpg",
+      "ground_truth": "blight",
+      "baseline_prediction": "blight",
+      "baseline_confidence": 0.9998,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blight",
+          "confidence": 0.9996,
+          "target_class_conf_delta": -0.0003,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blight",
+          "confidence": 0.9969,
+          "target_class_conf_delta": -0.0029,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blight",
+          "confidence": 0.9959,
+          "target_class_conf_delta": -0.004,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blight",
+          "confidence": 0.9994,
+          "target_class_conf_delta": -0.0005,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blight",
+          "confidence": 0.9952,
+          "target_class_conf_delta": -0.0046,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "blight_train_00009.jpg",
+      "ground_truth": "blight",
+      "baseline_prediction": "blight",
+      "baseline_confidence": 0.9941,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blight",
+          "confidence": 0.9982,
+          "target_class_conf_delta": 0.004,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blight",
+          "confidence": 0.8692,
+          "target_class_conf_delta": -0.1249,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blight",
+          "confidence": 0.998,
+          "target_class_conf_delta": 0.0038,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blight",
+          "confidence": 0.9885,
+          "target_class_conf_delta": -0.0056,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blight",
+          "confidence": 0.9808,
+          "target_class_conf_delta": -0.0133,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "blight_train_00287.jpg",
+      "ground_truth": "blight",
+      "baseline_prediction": "blight",
+      "baseline_confidence": 0.9998,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blight",
+          "confidence": 0.9998,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blight",
+          "confidence": 0.9996,
+          "target_class_conf_delta": -0.0002,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blight",
+          "confidence": 0.9994,
+          "target_class_conf_delta": -0.0004,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blight",
+          "confidence": 0.9996,
+          "target_class_conf_delta": -0.0002,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.8494,
+          "target_class_conf_delta": -0.8595,
+          "class_flip": true
+        }
+      }
+    },
+    {
+      "image_id": "blight_train_00552.jpg",
+      "ground_truth": "blight",
+      "baseline_prediction": "blight",
+      "baseline_confidence": 0.988,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blight",
+          "confidence": 0.9845,
+          "target_class_conf_delta": -0.0035,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blight",
+          "confidence": 0.9779,
+          "target_class_conf_delta": -0.0101,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blight",
+          "confidence": 0.9595,
+          "target_class_conf_delta": -0.0285,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blight",
+          "confidence": 0.9836,
+          "target_class_conf_delta": -0.0044,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blight",
+          "confidence": 0.9977,
+          "target_class_conf_delta": 0.0097,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "blight_train_00794.jpg",
+      "ground_truth": "blight",
+      "baseline_prediction": "blight",
+      "baseline_confidence": 0.9985,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "blight",
+          "confidence": 0.9987,
+          "target_class_conf_delta": 0.0002,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "blight",
+          "confidence": 0.9936,
+          "target_class_conf_delta": -0.0049,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "blight",
+          "confidence": 0.9924,
+          "target_class_conf_delta": -0.0061,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "blight",
+          "confidence": 0.9982,
+          "target_class_conf_delta": -0.0003,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "blight",
+          "confidence": 0.9224,
+          "target_class_conf_delta": -0.0761,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "brown_spot_test_00011.jpg",
+      "ground_truth": "brown_spot",
+      "baseline_prediction": "brown_spot",
+      "baseline_confidence": 0.9991,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9492,
+          "target_class_conf_delta": -0.0499,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9979,
+          "target_class_conf_delta": -0.0012,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.998,
+          "target_class_conf_delta": -0.001,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.971,
+          "target_class_conf_delta": -0.0281,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.998,
+          "target_class_conf_delta": -0.0011,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "brown_spot_train_00028.jpg",
+      "ground_truth": "brown_spot",
+      "baseline_prediction": "brown_spot",
+      "baseline_confidence": 0.9994,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.998,
+          "target_class_conf_delta": -0.0013,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9995,
+          "target_class_conf_delta": 0.0001,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9985,
+          "target_class_conf_delta": -0.0008,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9987,
+          "target_class_conf_delta": -0.0006,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9904,
+          "target_class_conf_delta": -0.009,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "brown_spot_train_00276.jpg",
+      "ground_truth": "brown_spot",
+      "baseline_prediction": "brown_spot",
+      "baseline_confidence": 0.9991,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9993,
+          "target_class_conf_delta": 0.0002,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9994,
+          "target_class_conf_delta": 0.0003,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9985,
+          "target_class_conf_delta": -0.0006,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9994,
+          "target_class_conf_delta": 0.0004,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9995,
+          "target_class_conf_delta": 0.0004,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "brown_spot_train_00482.jpg",
+      "ground_truth": "brown_spot",
+      "baseline_prediction": "brown_spot",
+      "baseline_confidence": 0.9918,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9953,
+          "target_class_conf_delta": 0.0035,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9985,
+          "target_class_conf_delta": 0.0067,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9808,
+          "target_class_conf_delta": -0.011,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9961,
+          "target_class_conf_delta": 0.0044,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9872,
+          "target_class_conf_delta": -0.0045,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "brown_spot_train_00716.jpg",
+      "ground_truth": "brown_spot",
+      "baseline_prediction": "brown_spot",
+      "baseline_confidence": 0.9995,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9907,
+          "target_class_conf_delta": -0.0088,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9989,
+          "target_class_conf_delta": -0.0006,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9994,
+          "target_class_conf_delta": -0.0001,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9981,
+          "target_class_conf_delta": -0.0014,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "brown_spot",
+          "confidence": 0.9992,
+          "target_class_conf_delta": -0.0003,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "IMG_20190419_094251.jpg",
+      "ground_truth": "healthy",
+      "baseline_prediction": "healthy",
+      "baseline_confidence": 1.0,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "healthy",
+          "confidence": 0.9999,
+          "target_class_conf_delta": -0.0001,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "healthy",
+          "confidence": 0.9996,
+          "target_class_conf_delta": -0.0004,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "healthy",
+          "confidence": 0.9926,
+          "target_class_conf_delta": -0.0073,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "IMG_20190419_133953.jpg",
+      "ground_truth": "healthy",
+      "baseline_prediction": "healthy",
+      "baseline_confidence": 1.0,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "IMG_20190419_162952.jpg",
+      "ground_truth": "healthy",
+      "baseline_prediction": "healthy",
+      "baseline_confidence": 1.0,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "IMG_20190419_174139.jpg",
+      "ground_truth": "healthy",
+      "baseline_prediction": "healthy",
+      "baseline_confidence": 1.0,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "healthy",
+          "confidence": 0.9999,
+          "target_class_conf_delta": -0.0001,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": 0.0,
+          "class_flip": false
+        }
+      }
+    },
+    {
+      "image_id": "IMG_20190424_130859.jpg",
+      "ground_truth": "healthy",
+      "baseline_prediction": "healthy",
+      "baseline_confidence": 1.0,
+      "perturbations": {
+        "background_blur": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "background_darken": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "background_brighten": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "neutral_background": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        },
+        "lesion_occlusion": {
+          "predicted_class": "healthy",
+          "confidence": 1.0,
+          "target_class_conf_delta": -0.0,
+          "class_flip": false
+        }
+      }
+    }
+  ]
+}

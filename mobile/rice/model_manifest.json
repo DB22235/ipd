@@ -1,0 +1,77 @@
+{
+  "manifest_version": "1.0",
+  "project": "IPD offline plant-disease detection",
+  "crop": "rice",
+  "model_status": "rice mobile prototype — benchmark validated, limited external evidence",
+  "primary_model": {
+    "model_id": "rice_mobilenetv3_large_supervised_float16_v1",
+    "filename": "supervised_mobilenetv3_float16.tflite",
+    "architecture": "MobileNetV3-Large",
+    "variant": "Float16 LiteRT",
+    "parameters": 3000196,
+    "size_bytes": 6099276,
+    "size_mb": 5.82,
+    "sha256": "1ee496ec553351b004b74cc8495775a0ec69d30daf926c61ceb81d1ff56885b7",
+    "input_shape": [1, 224, 224, 3],
+    "input_dtype": "float32",
+    "output_shape": [1, 4],
+    "output_type": "probabilities",
+    "output_activation": "softmax",
+    "normalization_range": [0.0, 255.0],
+    "preprocessing_method": "aspect_preserving_letterbox",
+    "letterbox_fill_rgb": [114, 114, 114],
+    "preprocessing_version": "2.0",
+    "benchmark_test_accuracy": 1.0,
+    "benchmark_blast_recall": 1.0,
+    "field_holdout_accuracy": 1.0,
+    "median_cpu_latency_ms": 4.19
+  },
+  "shadow_model": {
+    "model_id": "rice_mobilenetv3_large_distilled_float16_v1",
+    "filename": "distilled_mobilenetv3_float16.tflite",
+    "architecture": "MobileNetV3-Large",
+    "variant": "Float16 LiteRT",
+    "parameters": 3000196,
+    "size_bytes": 6098188,
+    "size_mb": 5.82,
+    "sha256": "16887f18ff7683e88ea1d54b050a5ccacfea5fc7bd805641c25e08b6eb72d1d6",
+    "input_shape": [1, 224, 224, 3],
+    "input_dtype": "float32",
+    "output_shape": [1, 4],
+    "output_type": "probabilities",
+    "output_activation": "softmax",
+    "normalization_range": [0.0, 255.0],
+    "preprocessing_method": "aspect_preserving_letterbox",
+    "letterbox_fill_rgb": [114, 114, 114],
+    "preprocessing_version": "2.0",
+    "benchmark_test_accuracy": 0.9959,
+    "benchmark_blast_recall": 0.9722,
+    "field_holdout_accuracy": 1.0,
+    "median_cpu_latency_ms": 4.00
+  },
+  "classes": [
+    "blast",
+    "blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "abstention_rules": {
+    "botanical_foliage_min_ratio": 0.05,
+    "blur_min_laplacian_variance": 40.0,
+    "confidence_min_threshold": 0.60,
+    "confidence_min_margin": 0.20,
+    "supported_states": [
+      "healthy",
+      "blast",
+      "brown_spot",
+      "blight",
+      "uncertain",
+      "unsupported_input"
+    ]
+  },
+  "limitations": [
+    "100% of healthy training images derive from RiceHealthyField_20190419, while 100% of disease images derive from RiceDisease_Unknown.",
+    "Model may rely on acquisition-style cues in addition to disease morphology.",
+    "Do not deploy as an autonomous agronomic diagnostic tool."
+  ]
+}

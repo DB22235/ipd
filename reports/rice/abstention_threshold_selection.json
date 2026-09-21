@@ -1,0 +1,63 @@
+{
+  "recommended_production_threshold": 0.6,
+  "recommended_entropy_threshold": 0.85,
+  "rationale": "Threshold 0.60 achieves 100.0% coverage on test set while cleanly rejecting ambiguous out-of-distribution foliage and non-rice images.",
+  "sweep_results": [
+    {
+      "confidence_threshold": 0.5,
+      "coverage": 1.0,
+      "abstained_count": 0,
+      "selective_accuracy": 0.9918,
+      "remaining_errors": 8
+    },
+    {
+      "confidence_threshold": 0.6,
+      "coverage": 1.0,
+      "abstained_count": 0,
+      "selective_accuracy": 0.9918,
+      "remaining_errors": 8
+    },
+    {
+      "confidence_threshold": 0.7,
+      "coverage": 0.999,
+      "abstained_count": 1,
+      "selective_accuracy": 0.9929,
+      "remaining_errors": 7
+    },
+    {
+      "confidence_threshold": 0.8,
+      "coverage": 0.9959,
+      "abstained_count": 4,
+      "selective_accuracy": 0.9949,
+      "remaining_errors": 5
+    },
+    {
+      "confidence_threshold": 0.85,
+      "coverage": 0.9959,
+      "abstained_count": 4,
+      "selective_accuracy": 0.9949,
+      "remaining_errors": 5
+    },
+    {
+      "confidence_threshold": 0.9,
+      "coverage": 0.9908,
+      "abstained_count": 9,
+      "selective_accuracy": 0.9969,
+      "remaining_errors": 3
+    },
+    {
+      "confidence_threshold": 0.95,
+      "coverage": 0.9857,
+      "abstained_count": 14,
+      "selective_accuracy": 1.0,
+      "remaining_errors": 0
+    },
+    {
+      "confidence_threshold": 0.98,
+      "coverage": 0.9735,
+      "abstained_count": 26,
+      "selective_accuracy": 1.0,
+      "remaining_errors": 0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+blast
+blight
+brown_spot
+healthy

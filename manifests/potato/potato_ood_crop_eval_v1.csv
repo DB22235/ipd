@@ -1,0 +1,13 @@
+image_id,path,source_domain,true_category,expected_behavior,foliage_expected,blur_expected,notes
+ricetest1.webp,test_images/rice/ricetest1.webp,Rice Crop,rice_leaf_blast,reject_or_explicit_mode,passes_foliage,passes_blur,Waterlogged paddy rice leaf with blast lesion
+ricetest2.webp,test_images/rice/ricetest2.webp,Rice Crop,rice_brown_spot,reject_or_explicit_mode,passes_foliage,passes_blur,Flooded field rice vegetation with brown spots
+ricetest3.webp,test_images/rice/ricetest3.webp,Rice Crop,rice_bacterial_blight,reject_or_explicit_mode,passes_foliage,passes_blur,Field rice blade with bacterial blight
+ricetest4.jpg,test_images/rice/ricetest4.jpg,Rice Crop,rice_healthy_blade,reject_or_explicit_mode,passes_foliage,passes_blur,Outdoor canopy rice blade
+ricetest5.png,test_images/rice/ricetest5.png,Rice Crop,rice_healthy_foliage,reject_or_explicit_mode,passes_foliage,passes_blur,Close-up outdoor rice foliage
+ricetest6.png,test_images/rice/ricetest6.png,Rice Crop,rice_seedling_sparse,reject_by_gate_or_mode,fails_foliage,passes_blur,Sparse seedling with large dark background
+synthetic_blank_desk,synthetic_blank_desk,Non-Leaf Clutter,wood_tabletop,reject_by_quality_gate,fails_foliage,passes_blur,Solid wooden desk texture
+synthetic_white_sheet,synthetic_white_sheet,Non-Leaf Clutter,white_paper,reject_by_quality_gate,fails_foliage,passes_blur,Solid white paper sheet
+synthetic_blurred_scene,synthetic_blurred_scene,Degraded Capture,motion_blur,reject_by_quality_gate,fails_blur,fails_blur,Extreme optical/motion blur
+synthetic_dark_soil,synthetic_dark_soil,Non-Leaf Clutter,field_soil,reject_by_quality_gate,fails_foliage,passes_blur,Pure dark loamy field soil
+synthetic_blue_cloth,synthetic_blue_cloth,Non-Leaf Clutter,clothing_fabric,reject_by_quality_gate,fails_foliage,passes_blur,Blue denim field worker clothing
+synthetic_artificial_green,synthetic_artificial_green,Out-of-Domain Vegetation,plastic_foliage,reject_or_explicit_mode,passes_foliage,passes_blur,Artificial plastic green plant leaf

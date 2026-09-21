@@ -1,0 +1,56 @@
+{
+  "manifest_path": "manifests\\rice\\split_manifest_v1.csv",
+  "manifest_sha256": "c979baecdfd2cbaadd72f64daf0fc29f387c6fa343d5a249d0f9bc839860c838",
+  "total_rice_samples": 4932,
+  "expected_rice_samples": 4932,
+  "partition_counts": {
+    "train": 3315,
+    "test": 981,
+    "val": 636
+  },
+  "expected_partition_counts": {
+    "train": 3315,
+    "val": 636,
+    "test": 981
+  },
+  "class_counts_by_partition": {
+    "train": {
+      "healthy": 904,
+      "blight": 891,
+      "brown_spot": 846,
+      "blast": 674
+    },
+    "val": {
+      "blight": 196,
+      "brown_spot": 176,
+      "blast": 142,
+      "healthy": 122
+    },
+    "test": {
+      "healthy": 462,
+      "blight": 197,
+      "brown_spot": 178,
+      "blast": 144
+    }
+  },
+  "source_counts_by_partition": {
+    "train": {
+      "RiceDisease_Unknown": 2411,
+      "RiceHealthyField_20190419": 904
+    },
+    "val": {
+      "RiceDisease_Unknown": 514,
+      "RiceHealthyField_20190419": 122
+    },
+    "test": {
+      "RiceDisease_Unknown": 519,
+      "RiceHealthyField_20190419": 462
+    }
+  },
+  "group_counts_by_partition": {
+    "train": 1553,
+    "val": 331,
+    "test": 331
+  },
+  "status": "PASS"
+}

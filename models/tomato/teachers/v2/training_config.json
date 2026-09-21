@@ -1,0 +1,29 @@
+{
+  "model_id": "tomato_teacher_v2",
+  "architecture": "EfficientNetB3",
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "strategy": "Two-phase transfer learning (MBConv Block 7 unfreeze with frozen BatchNorm)",
+  "phase_a": {
+    "epochs": 5,
+    "lr": 0.001,
+    "backbone_frozen": true
+  },
+  "phase_b": {
+    "epochs": 15,
+    "lr": 3e-05,
+    "unfrozen_layers": 35,
+    "bn_frozen": true
+  },
+  "augmentation": "RandomFlip + Rotation(0.05) + Translation(0.05) + Brightness(0.15) + Contrast(0.15)",
+  "dataset_provenance": "manifests/tomato/teacher_v2/split_manifest.csv",
+  "sha256_checksum": "a7ae01a229778efbb9ce5b25da7e8cdc20f045d18a22b3bdae4325225b0c848e"
+}

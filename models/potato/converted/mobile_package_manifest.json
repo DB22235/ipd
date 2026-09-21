@@ -1,0 +1,29 @@
+{
+  "crop": "potato",
+  "primary_model": "supervised_mobilenetv3_float16.tflite",
+  "primary_model_size_mb": 5.76,
+  "primary_model_sha256": "f3b3620ea3363f5503da92d89a41ed7316b242d4447015bf59ec5efd416ad83c",
+  "agreement_with_keras": 1.0,
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "uint8",
+  "output_shape": [
+    1,
+    3
+  ],
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "labels_file": "potato_labels.txt",
+  "formats_available": [
+    "float32",
+    "float16",
+    "int8"
+  ]
+}

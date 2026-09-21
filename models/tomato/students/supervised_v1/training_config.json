@@ -1,0 +1,39 @@
+{
+  "model_id": "tomato_student_supervised_v1",
+  "role": "mobile_student_baseline",
+  "architecture": "MobileNetV3-Large",
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "class_order": {
+    "0": "early_blight",
+    "1": "healthy",
+    "2": "late_blight"
+  },
+  "teacher_reference": {
+    "model_id": "tomato_teacher_v2",
+    "sha256_checksum": "a7ae01a229778efbb9ce5b25da7e8cdc20f045d18a22b3bdae4325225b0c848e"
+  },
+  "phase_a": {
+    "epochs": 5,
+    "lr": 0.001,
+    "backbone_frozen": true
+  },
+  "phase_b": {
+    "epochs": 15,
+    "lr": 5e-05,
+    "unfrozen_layers": 40,
+    "bn_frozen": true
+  },
+  "augmentation": "RandomFlip + Rotation(0.05) + Translation(0.05) + Brightness(0.15) + Contrast(0.15)",
+  "dataset_provenance": "manifests/tomato/teacher_v2/split_manifest.csv",
+  "preprocessing": "aspect_preserving_letterbox_rgb114",
+  "sha256_checksum": "d46bc118f97a70686c9ca2c03e410339dfb0a3e8a2088acf471875b6e2d7a87d"
+}

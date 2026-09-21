@@ -1,0 +1,25 @@
+{
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "batch_size": 16,
+  "tier1_pure_gpu_compute": {
+    "mean_step_ms": 541.99,
+    "steps_per_sec": 1.85,
+    "images_per_sec": 29.52,
+    "peak_vram_mb": 5463.47
+  },
+  "tier2_in_memory_ram_cached": {
+    "mean_step_ms": 546.85,
+    "steps_per_sec": 1.83,
+    "images_per_sec": 29.26
+  },
+  "tier3_disk_backed_baseline": {
+    "mean_step_ms": 503.01,
+    "steps_per_sec": 1.99,
+    "images_per_sec": 31.81
+  },
+  "diagnosis": {
+    "disk_overhead_ms": -43.84,
+    "ram_speedup_factor": 0.92,
+    "primary_bottleneck": "GPU Compute"
+  }
+}

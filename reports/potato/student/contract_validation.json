@@ -1,0 +1,11 @@
+{
+  "status": "VALID",
+  "crop": "potato",
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "teacher_sha256": "eab26cba3f72dd18f55854f0b5115b0e2ec6c2996e7cf81ce8a635e7ee0f739a",
+  "split_manifest": "manifests\\potato\\potato_split_manifest_v1.csv"
+}

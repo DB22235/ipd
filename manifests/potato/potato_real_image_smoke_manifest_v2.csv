@@ -1,0 +1,21 @@
+image_id,capture_date,camera,location_if_known,independent_label,label_source,label_confidence,model_prediction,confidence,margin,abstention_state,failure_reason,background_type
+potatotest.png,2026-03-12,Redmi Note / Android Phone,Local Farm (India),potato_early_blight,Visual Human Review (Target-board rings),Moderate,healthy,0.9456,0.8911,accepted,None,Soil / outdoor foliage
+potatotest2.png,2026-03-12,Redmi Note / Android Phone,Local Farm (India),potato_late_blight,Visual Human Review (Water-soaked lesion),High,late_blight,0.8194,0.677,accepted,None,Tabletop / indoor desk
+potatotest2_cropped.png,2026-03-12,Redmi Note / Android Phone (Cropped),Local Farm (India),potato_late_blight,Visual Human Review (Lesion close-up),High,healthy,0.8702,0.7937,accepted,None,Cropped leaf margin
+test10.webp,2026-02-18,Web / Mobile Camera,Unspecified,unverified_leaf,Unverified (External),Unverified,healthy,1.0,0.9999,accepted,None,Natural daylight foliage
+test11.webp,2026-02-18,Web / Mobile Camera,Unspecified,unverified_leaf,Unverified (External),Unverified,healthy,1.0,1.0,accepted,None,Outdoor natural garden
+test3image.png,2026-01-15,Smartphone High-Res,Unspecified,unverified_leaf,Unverified (External),Unverified,healthy,0.9947,0.9908,accepted,None,Uncontrolled tabletop
+test4.png,2026-01-15,Smartphone High-Res,Unspecified,unverified_leaf,Unverified (External),Unverified,healthy,1.0,1.0,accepted,None,Uncontrolled tabletop
+test5.png,2026-01-15,Smartphone High-Res,Unspecified,unverified_leaf,Unverified (External),Unverified,early_blight,0.5446,0.0893,uncertain,Low confidence (54.5% < 60.0%) & Low margin (0.089 < 0.200),Uncontrolled outdoor
+test6_r.jpg,2026-01-20,Mobile Phone,Unspecified,unverified_leaf,Unverified (External),Unverified,late_blight,0.5139,0.2268,uncertain,Low confidence (51.4% < 60.0%),Field soil / sunny
+test7_r.webp,2026-01-20,Mobile Phone,Unspecified,unverified_leaf,Unverified (External),Unverified,healthy,0.9926,0.9857,accepted,None,Field soil / shade
+test9.webp,2026-01-22,Mobile Phone,Unspecified,unverified_leaf,Unverified (External),Unverified,early_blight,0.999,0.9979,accepted,None,Mixed crop canopy
+ricetest1.webp,2026-02-10,Smartphone Mobile,Rice Paddy (India),non_potato (rice_leaf),Domain Expert (Rice agronomist),High (Non-Potato),healthy,1.0,1.0,accepted,None,Waterlogged rice field
+ricetest2.webp,2026-02-10,Smartphone Mobile,Rice Paddy (India),non_potato (rice_leaf),Domain Expert (Rice agronomist),High (Non-Potato),healthy,1.0,1.0,accepted,None,Flooded field vegetation
+ricetest3.webp,2026-02-10,Smartphone Mobile,Rice Paddy (India),non_potato (rice_leaf),Domain Expert (Rice agronomist),High (Non-Potato),healthy,1.0,1.0,accepted,None,Flooded field vegetation
+ricetest4.jpg,2026-02-12,DSLR / High Res,Field Station,non_potato (rice_leaf),Domain Expert (Rice agronomist),High (Non-Potato),healthy,0.998,0.9959,accepted,None,Outdoor plant canopy
+ricetest5.png,2026-02-14,Smartphone Mobile,Field Station,non_potato (rice_leaf),Domain Expert (Rice agronomist),High (Non-Potato),healthy,1.0,1.0,accepted,None,Outdoor plant canopy
+ricetest6.png,2026-02-14,Smartphone Mobile,Field Station,non_potato (rice_leaf),Domain Expert (Rice agronomist),High (Non-Potato),healthy,0.9996,0.9993,unsupported_input,Insufficient foliage (2.4% < 5.0%),Outdoor plant canopy
+synthetic_blank_desk,2026-09-19,N/A (Synthetic Canvas),N/A,unusable_scene (blank_wood),Synthetic Benchmark,High,healthy,0.9063,0.8296,unsupported_input,Insufficient foliage (0.0% < 5.0%),Empty brown wood texture
+synthetic_white_sheet,2026-09-19,N/A (Synthetic Canvas),N/A,unusable_scene (white_paper),Synthetic Benchmark,High,healthy,0.7228,0.5729,unsupported_input,Insufficient foliage (0.0% < 5.0%),Solid white paper
+synthetic_blurred_scene,2026-09-19,N/A (Simulated Motion Blur),N/A,unusable_scene (severe_blur),Synthetic Benchmark,High,healthy,0.8672,0.7856,unsupported_input,Severe image blur (var 0.0 < 40.0),Severe optical blur (var < 5)

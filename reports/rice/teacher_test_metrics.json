@@ -1,0 +1,51 @@
+{
+  "dataset": "clean_dataset/rice_dataset/test",
+  "total_samples": 981,
+  "accuracy": 0.9918450560652395,
+  "macro_f1": 0.9878626692456479,
+  "weighted_f1": 0.9918304435904801,
+  "balanced_accuracy": 0.9867743445692885,
+  "total_errors": 8,
+  "error_rate": 0.00815494393476045,
+  "per_class": {
+    "blast": {
+      "precision": 1.0,
+      "recall": 0.9583333333333334,
+      "f1-score": 0.9787234042553191,
+      "support": 144.0
+    },
+    "blight": {
+      "precision": 0.9899497487437185,
+      "recall": 1.0,
+      "f1-score": 0.9949494949494949,
+      "support": 197.0
+    },
+    "brown_spot": {
+      "precision": 0.967032967032967,
+      "recall": 0.9887640449438202,
+      "f1-score": 0.9777777777777777,
+      "support": 178.0
+    },
+    "healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 462.0
+    },
+    "accuracy": 0.9918450560652395,
+    "macro avg": {
+      "precision": 0.9892456789441714,
+      "recall": 0.9867743445692885,
+      "f1-score": 0.9878626692456479,
+      "support": 981.0
+    },
+    "weighted avg": {
+      "precision": 0.9919999680268916,
+      "recall": 0.9918450560652395,
+      "f1-score": 0.9918304435904801,
+      "support": 981.0
+    }
+  },
+  "mean_confidence": 0.9965327947754622,
+  "mean_entropy_nats": 0.014369898074098842
+}

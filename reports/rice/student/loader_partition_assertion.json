@@ -1,0 +1,10 @@
+{
+  "train_samples_loaded": 3315,
+  "val_samples_loaded": 636,
+  "test_samples_loaded": 981,
+  "train_val_overlap_count": 0,
+  "train_test_overlap_count": 0,
+  "val_test_overlap_count": 0,
+  "assertion_strictly_disjoint": true,
+  "status": "PASS"
+}

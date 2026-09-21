@@ -1,0 +1,20 @@
+{
+  "model_id": "tomato_student_supervised_v1",
+  "benchmark_test": {
+    "samples": 1346,
+    "accuracy": 0.9985,
+    "macro_f1": 0.9988,
+    "early_blight_recall": 1.0,
+    "healthy_recall": 1.0,
+    "late_blight_recall": 0.9964,
+    "healthy_fp_rate": 0.0012,
+    "ece": 0.0008,
+    "brier_score": 0.0029
+  },
+  "field_holdout": {
+    "samples": 12,
+    "accuracy": 0.4167,
+    "healthy_fp_rate": 0.0,
+    "background_stability_pct": 91.7
+  }
+}

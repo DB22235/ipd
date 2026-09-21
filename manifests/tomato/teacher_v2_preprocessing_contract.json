@@ -1,0 +1,35 @@
+{
+  "contract_version": "2.0.0",
+  "crop": "tomato",
+  "target_model": "tomato_teacher_v2",
+  "architecture": "EfficientNetB3",
+  "input_shape": [300, 300, 3],
+  "color_space": "RGB",
+  "color_ordering": "RGB (Red = Byte 0, Green = Byte 1, Blue = Byte 2)",
+  "resize_policy": "aspect_preserving_letterbox",
+  "padding_color_rgb": [114, 114, 114],
+  "padding_policy": "symmetrical_longest_edge_pad",
+  "geometric_stretching": false,
+  "normalization": {
+    "framework": "keras_builtin_efficientnet_normalization",
+    "formula": "Standard ImageNet mean [0.485, 0.456, 0.406] and std [0.229, 0.224, 0.225] embedded in model graph",
+    "external_scaling_required": false
+  },
+  "classes": {
+    "num_classes": 3,
+    "class_names": ["early_blight", "healthy", "late_blight"],
+    "index_mapping": {
+      "0": "early_blight",
+      "1": "healthy",
+      "2": "late_blight"
+    }
+  },
+  "quality_gate_thresholds": {
+    "foliage_hue_min": 20,
+    "foliage_hue_max": 95,
+    "foliage_min_coverage_ratio": 0.15,
+    "blur_min_laplacian_variance": 100.0,
+    "uncertainty_min_confidence": 0.70,
+    "uncertainty_min_margin": 0.30
+  }
+}

@@ -1,0 +1,531 @@
+{
+  "audit_version": "1.0",
+  "governing_document": "IPD Model Improvement: Prioritized Execution Plan and Repository Hygiene (Manus AI)",
+  "summary": {
+    "total_tracked_files": 0,
+    "total_untracked_items": 33,
+    "total_large_files_over_10mb": 24,
+    "total_model_binaries": 35,
+    "total_dataset_directories": 5,
+    "total_secret_risks_detected": 0
+  },
+  "directories_by_purpose": {
+    "scripts": "Executable training, evaluation, conversion, and packaging scripts",
+    "src": "Reusable core libraries, contracts, and data-loaders",
+    "manifests": "Lightweight dataset split manifests and preprocessing contracts",
+    "configs": "Declarative YAML/JSON training hyperparameter configurations",
+    "reports": "Markdown documentation, audit logs, and master reports",
+    "docs": "Specifications, change logs, and reference architecture documentation",
+    "tools": "Developer CLI utilities and hygiene verification scripts",
+    "mobile": "Packaged mobile deployment models, manifests, and checksums",
+    "models": "Model weights, training checkpoints, and conversion artifacts",
+    "clean_dataset": "Foliar training and validation images (External dataset)",
+    "field_test_images": "Outdoor challenging evaluation images",
+    "finaldataset": "Archived dataset dump",
+    "bounding_box_dataset": "Foliar lesion bounding box annotations",
+    "archive": "Historical artifacts and obsolete files",
+    ".venv": "Python virtual environment"
+  },
+  "dataset_directories": {
+    "archive": {
+      "file_count": 1500,
+      "size_mb": 4770.96
+    },
+    "bounding_box_dataset": {
+      "file_count": 4486,
+      "size_mb": 80.52
+    },
+    "clean_dataset": {
+      "file_count": 16390,
+      "size_mb": 330.63
+    },
+    "field_test_images": {
+      "file_count": 30,
+      "size_mb": 0.64
+    },
+    "finaldataset": {
+      "file_count": 16396,
+      "size_mb": 347.3
+    }
+  },
+  "large_files": [
+    {
+      "path": "archive/zips/archive.zip",
+      "size_mb": 4436.02,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "archive/zips/finaldataset.zip",
+      "size_mb": 327.39,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato_teacher/potato_teacher_inverted_backup.keras",
+      "size_mb": 80.36,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_teacher_original_backup.keras",
+      "size_mb": 80.35,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato_teacher/potato_finetune_best.keras",
+      "size_mb": 80.34,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato_teacher/potato_teacher_efficientnetb3.keras",
+      "size_mb": 80.34,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/teachers/v2/teacher_best.keras",
+      "size_mb": 74.4,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_finetune_best.keras",
+      "size_mb": 74.16,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_teacher_efficientnetb3.keras",
+      "size_mb": 74.16,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher_v3/tomato_teacher_efficientnetb3_best.keras",
+      "size_mb": 71.99,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice_teacher_v1/rice_teacher_efficientnetb3_best.keras",
+      "size_mb": 69.45,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato_teacher/potato_stage_a_best.keras",
+      "size_mb": 47.04,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_stage_a_best.keras",
+      "size_mb": 47.04,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice_teacher_v1/stage1_warmup.keras",
+      "size_mb": 42.57,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher_v3/stage1_warmup.keras",
+      "size_mb": 42.55,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/student_baselines/rice_student_mobilenetv3_baseline_best.keras",
+      "size_mb": 34.94,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato/student_baselines/run_001/student_best.keras",
+      "size_mb": 34.91,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/students/supervised_v1/student_best.keras",
+      "size_mb": 27.97,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/distilled_students/rice_student_mobilenetv3_distilled_best.keras",
+      "size_mb": 12.11,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/supervised_mobilenetv3_float32.tflite",
+      "size_mb": 11.42,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/distilled_mobilenetv3_float32.tflite",
+      "size_mb": 11.41,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "mobile/potato/supervised_mobilenetv3_float32.tflite",
+      "size_mb": 11.38,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato/converted/supervised_mobilenetv3_float32.tflite",
+      "size_mb": 11.38,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/converted/tomato_student_float32.tflite",
+      "size_mb": 11.38,
+      "is_tracked": false,
+      "is_ignored": true
+    }
+  ],
+  "model_files": [
+    {
+      "path": "models/potato_teacher/potato_teacher_inverted_backup.keras",
+      "format": ".keras",
+      "size_mb": 80.36,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_teacher_original_backup.keras",
+      "format": ".keras",
+      "size_mb": 80.35,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato_teacher/potato_finetune_best.keras",
+      "format": ".keras",
+      "size_mb": 80.34,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato_teacher/potato_teacher_efficientnetb3.keras",
+      "format": ".keras",
+      "size_mb": 80.34,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/teachers/v2/teacher_best.keras",
+      "format": ".keras",
+      "size_mb": 74.4,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_finetune_best.keras",
+      "format": ".keras",
+      "size_mb": 74.16,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_teacher_efficientnetb3.keras",
+      "format": ".keras",
+      "size_mb": 74.16,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher_v3/tomato_teacher_efficientnetb3_best.keras",
+      "format": ".keras",
+      "size_mb": 71.99,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice_teacher_v1/rice_teacher_efficientnetb3_best.keras",
+      "format": ".keras",
+      "size_mb": 69.45,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato_teacher/potato_stage_a_best.keras",
+      "format": ".keras",
+      "size_mb": 47.04,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher/tomato_stage_a_best.keras",
+      "format": ".keras",
+      "size_mb": 47.04,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice_teacher_v1/stage1_warmup.keras",
+      "format": ".keras",
+      "size_mb": 42.57,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato_teacher_v3/stage1_warmup.keras",
+      "format": ".keras",
+      "size_mb": 42.55,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/student_baselines/rice_student_mobilenetv3_baseline_best.keras",
+      "format": ".keras",
+      "size_mb": 34.94,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato/student_baselines/run_001/student_best.keras",
+      "format": ".keras",
+      "size_mb": 34.91,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/students/supervised_v1/student_best.keras",
+      "format": ".keras",
+      "size_mb": 27.97,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/distilled_students/rice_student_mobilenetv3_distilled_best.keras",
+      "format": ".keras",
+      "size_mb": 12.11,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/supervised_mobilenetv3_float32.tflite",
+      "format": ".tflite",
+      "size_mb": 11.42,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/distilled_mobilenetv3_float32.tflite",
+      "format": ".tflite",
+      "size_mb": 11.41,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "mobile/potato/supervised_mobilenetv3_float32.tflite",
+      "format": ".tflite",
+      "size_mb": 11.38,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato/converted/supervised_mobilenetv3_float32.tflite",
+      "format": ".tflite",
+      "size_mb": 11.38,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/converted/tomato_student_float32.tflite",
+      "format": ".tflite",
+      "size_mb": 11.38,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "mobile/rice/distilled_mobilenetv3_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.82,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "mobile/rice/supervised_mobilenetv3_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.82,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/distilled_mobilenetv3_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.82,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/supervised_mobilenetv3_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.82,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "mobile/tomato/tomato_student_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.77,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/converted/tomato_student_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.77,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "mobile/potato/supervised_mobilenetv3_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.76,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato/converted/supervised_mobilenetv3_float16.tflite",
+      "format": ".tflite",
+      "size_mb": 5.76,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/distilled_mobilenetv3_int8.tflite",
+      "format": ".tflite",
+      "size_mb": 3.39,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/rice/converted/supervised_mobilenetv3_int8.tflite",
+      "format": ".tflite",
+      "size_mb": 3.39,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/tomato/converted/tomato_student_int8.tflite",
+      "format": ".tflite",
+      "size_mb": 3.36,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "mobile/potato/supervised_mobilenetv3_int8.tflite",
+      "format": ".tflite",
+      "size_mb": 3.35,
+      "is_tracked": false,
+      "is_ignored": true
+    },
+    {
+      "path": "models/potato/converted/supervised_mobilenetv3_int8.tflite",
+      "format": ".tflite",
+      "size_mb": 3.35,
+      "is_tracked": false,
+      "is_ignored": true
+    }
+  ],
+  "secret_findings": [],
+  "gitignore_probes": [
+    {
+      "probe_path": "clean_dataset/sample.jpg",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "field_test_images/rice/blast/sample.jpg",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "models/tomato/teachers/v2/teacher_best.keras",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "models/tomato/converted/tomato_student_float16.tflite",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "mobile/tomato/tomato_student_float16.tflite",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": ".venv/pyvenv.cfg",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "__pycache__/test.pyc",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "training.log",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "scripts/tomato_student/train_student_baseline.py",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "src/contracts.py",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "configs/training.yaml",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "manifests/tomato/teacher_v2/split_manifest.csv",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "reports/tomato/TOMATO_STUDENT_SUPERVISED_V1_MASTER_REPORT_FOR_MANUS.md",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "status": "COMPLIANT"
+    },
+    {
+      "probe_path": "README.md",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "status": "COMPLIANT"
+    }
+  ]
+}

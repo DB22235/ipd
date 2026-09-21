@@ -1,0 +1,46 @@
+{
+  "contract_name": "potato_mobile_student_inference_contract_v2",
+  "version": "2.0.0",
+  "target_crop": "potato",
+  "model_role": "primary_mobile_production_candidate",
+  "model_file": "mobile/potato/supervised_mobilenetv3_float16.tflite",
+  "sha256": "f3b3620ea93fd54f59e4e6129c5462cf3ea13203f5726207865c3eb6f0dbe5ad",
+  "binary_size_bytes": 5764240,
+  "input_shape": [1, 224, 224, 3],
+  "input_dtype": "uint8",
+  "input_pixel_range": [0, 255],
+  "color_order": "RGB",
+  "output_shape": [1, 3],
+  "output_dtype": "float32",
+  "class_order": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "preprocessing": {
+    "strategy": "aspect_preserving_letterbox",
+    "fill_color_rgb": [114, 114, 114],
+    "interpolation": "bilinear"
+  },
+  "runtime_thresholds": {
+    "whole_view_confidence_threshold": 0.60,
+    "whole_view_margin_threshold": 0.20,
+    "closeup_disease_override_confidence": 0.65,
+    "closeup_disease_override_margin": 0.25,
+    "foliage_coverage_percent_min": 5.0,
+    "blur_laplacian_variance_min": 40.0
+  },
+  "camerax_viewfinder_contract": {
+    "reticle_shape": "square",
+    "reticle_relative_dimensions": [0.50, 0.50],
+    "reticle_center_coordinate": [0.50, 0.50],
+    "standoff_distance_cm": [15.0, 20.0],
+    "min_lesion_fill_percent": 30.0
+  },
+  "abstention_prompts": {
+    "unsupported_foliage": "Insufficient foliage detected (< 5%). Point camera at a green potato leaf.",
+    "unsupported_blur": "Severe camera blur detected. Hold the phone steady for close-up focus.",
+    "divergence_recapture": "Wide-angle view detected potential disease, but close-up framed healthy tissue. Center the diseased spot inside the yellow box and recapture.",
+    "uncertain_margin": "Foliar pattern ambiguous. Inspect under natural diffuse light or consult an agronomist."
+  }
+}

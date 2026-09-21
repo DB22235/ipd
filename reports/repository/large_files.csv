@@ -1,0 +1,11 @@
+relative_path,size_bytes,size_mb,extension,role,suggested_handling
+archive/zips/archive.zip,4651502464,4436.02,.zip,Archive,Move to archive/zips/ & .gitignore
+archive/zips/finaldataset.zip,343291673,327.39,.zip,Archive,Move to archive/zips/ & .gitignore
+models/potato_teacher/potato_teacher_inverted_backup.keras,84258343,80.36,.keras,Model Checkpoint,Track via Model Registry & .gitignore
+models/tomato_teacher/tomato_teacher_original_backup.keras,84258321,80.35,.keras,Model Checkpoint,Track via Model Registry & .gitignore
+models/potato_teacher/potato_finetune_best.keras,84244411,80.34,.keras,Model Checkpoint,Track via Model Registry & .gitignore
+models/potato_teacher/potato_teacher_efficientnetb3.keras,84244411,80.34,.keras,Model Checkpoint,Track via Model Registry & .gitignore
+models/tomato_teacher/tomato_finetune_best.keras,77763680,74.16,.keras,Model Checkpoint,Track via Model Registry & .gitignore
+models/tomato_teacher/tomato_teacher_efficientnetb3.keras,77763680,74.16,.keras,Model Checkpoint,Track via Model Registry & .gitignore
+models/tomato_teacher_v3/tomato_teacher_efficientnetb3_best.keras,75485020,71.99,.keras,Model Checkpoint,Track via Model Registry & .gitignore
+models/rice_teacher_v1/rice_teacher_efficientnetb3_best.keras,72822597,69.45,.keras,Model Checkpoint,Track via Model Registry & .gitignore

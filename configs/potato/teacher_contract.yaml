@@ -1,0 +1,22 @@
+# ==============================================================================
+# Potato Teacher Baseline Model Contract
+# Frozen EfficientNetB3 Teacher for Stage 2 Distillation
+# ==============================================================================
+
+crop: potato
+model_name: potato_teacher_efficientnetb3
+architecture: EfficientNetB3
+input_shape: [300, 300, 3]
+num_classes: 3
+class_names:
+  - early_blight
+  - healthy
+  - late_blight
+
+model_path: models/potato_teacher/potato_teacher_efficientnetb3.keras
+manifest_path: models/potato_teacher/model_manifest.json
+sha256_checksum: eab26cba3f72dd18f55854f0b5115b0e2ec6c2996e7cf81ce8a635e7ee0f739a
+
+training_constraints:
+  frozen_during_distillation: true
+  called_with_training_false: true

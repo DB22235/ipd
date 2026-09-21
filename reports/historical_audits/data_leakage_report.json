@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "dataset_root": "clean_dataset\\tomato_dataset",
+    "total_images": 4486,
+    "corrupted_images": 0,
+    "split_counts": {
+      "train": {
+        "early_blight": 702,
+        "healthy": 1117,
+        "late_blight": 1329
+      },
+      "val": {
+        "early_blight": 149,
+        "healthy": 232,
+        "late_blight": 288
+      },
+      "test": {
+        "early_blight": 149,
+        "healthy": 236,
+        "late_blight": 284
+      }
+    },
+    "exact_duplicate_groups": 0,
+    "exact_cross_split_leakage_groups": 0,
+    "near_duplicate_groups": 0,
+    "near_cross_split_leakage_groups": 0
+  },
+  "exact_cross_split_leakage": [],
+  "near_cross_split_leakage": []
+}

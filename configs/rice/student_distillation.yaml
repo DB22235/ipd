@@ -1,0 +1,56 @@
+# ==============================================================================
+# Rice Student Model Distillation Configuration
+# ==============================================================================
+project: ipd
+crop: rice
+model_role: student_distilled
+architecture: MobileNetV3Large
+
+# Teacher Contract
+teacher_model_path: models/rice_teacher_v1/rice_teacher_efficientnetb3_best.keras
+teacher_manifest_path: models/rice_teacher_v1/rice_teacher_v1_field_validated.json
+teacher_sha256: 2eca4294596905fb6231911b66cbeafc90ac8528ecd34461327b43074ec9e738
+teacher_input_size: [300, 300]
+
+# Class contract strictly aligned with frozen teacher v1
+classes:
+  - blast
+  - blight
+  - brown_spot
+  - healthy
+
+# Student Specifications
+input_size: [224, 224]
+channels: 3
+preprocessing: aspect_preserving_letterbox
+neutral_fill: [114, 114, 114]
+pixel_range: [0.0, 255.0]
+
+# Distillation Hyperparameters
+temperature: 3.0
+alpha: 0.5
+use_ground_truth_loss: true
+
+# Manifest and Data Partitioning
+split_manifest: manifests/rice/split_manifest_v1.csv
+seed: 42
+batch_size: 16
+use_class_weights: true
+
+# Training Optimization Parameters
+max_epochs: 30
+early_stopping_patience: 6
+optimizer: adamw
+learning_rate: 0.0001
+weight_decay: 0.0001
+dropout_rate: 0.25
+
+# Execution and Hardware
+backend: torch
+target_device: cuda
+mixed_precision: false
+
+# Storage and Artifacts
+output_dir: models/rice/distilled_students
+checkpoint_name: rice_student_mobilenetv3_distilled_best.keras
+reports_dir: reports/rice/distillation

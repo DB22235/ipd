@@ -1,0 +1,88 @@
+{
+  "registry_schema_version": "1.0",
+  "project": "IPD Rice Disease Detection",
+  "last_updated": "2026-09-18",
+  "models": [
+    {
+      "model_id": "rice_teacher_v1_benchmark_candidate",
+      "model_role": "teacher",
+      "architecture": "EfficientNetB3",
+      "model_path": "models/rice_teacher_v1/rice_teacher_efficientnetb3_best.keras",
+      "model_sha256": "2eca4294596905fb6231911b66cbeafc90ac8528ecd34461327b43074ec9e738",
+      "file_size_bytes": 72822597,
+      "parameter_count": 12236700,
+      "dataset_version": "clean_dataset_v1",
+      "split_version": "split_manifest_v1",
+      "class_order": ["blast", "blight", "brown_spot", "healthy"],
+      "input_size": [300, 300, 3],
+      "preprocessing_version": "aspect_preserving_letterbox_v1",
+      "benchmark_metrics": {
+        "test_accuracy": 0.9918,
+        "test_macro_f1": 0.9879,
+        "blast_recall": 0.9583,
+        "total_test_samples": 981
+      },
+      "source_confounding_status": "unresolved_source_domain_confounding",
+      "mobile_conversion_status": "not_applicable_server_teacher",
+      "release_status": "benchmark_candidate",
+      "known_limitations": "Dataset source perfectly correlates with healthy class. Cross-source disease generalization unverified on field-collected samples."
+    },
+    {
+      "model_id": "rice_student_mobilenetv3_supervised_v1_benchmark_candidate",
+      "model_role": "student_baseline",
+      "architecture": "MobileNetV3Large",
+      "teacher_id": null,
+      "model_path": "models/rice/student_baselines/rice_student_mobilenetv3_baseline_best.keras",
+      "model_sha256": "07e8a3ae6b315286723d454ed0ce947f3805ed80bc96de3d95e4e7d23fe326f6",
+      "file_size_bytes": 36637981,
+      "parameter_count": 3000196,
+      "dataset_version": "clean_dataset_v1",
+      "split_version": "split_manifest_v1",
+      "class_order": ["blast", "blight", "brown_spot", "healthy"],
+      "input_size": [224, 224, 3],
+      "preprocessing_version": "aspect_preserving_letterbox_v1",
+      "benchmark_metrics": {
+        "test_accuracy": 1.0,
+        "test_macro_f1": 1.0,
+        "blast_recall": 1.0,
+        "ece": 0.0006,
+        "total_test_samples": 981
+      },
+      "source_confounding_status": "unresolved_source_domain_confounding",
+      "mobile_conversion_status": "pending_litert_conversion",
+      "release_status": "benchmark_candidate",
+      "known_limitations": "All current classes are perfectly correlated with dataset source in the combined dataset. Benchmark results may therefore overestimate cross-source disease generalization. Independent source-balanced or source-held-out evaluation remains required."
+    },
+    {
+      "model_id": "rice_student_mobilenetv3_distilled_v1_compact_benchmark_candidate",
+      "model_role": "student_distilled",
+      "architecture": "MobileNetV3Large",
+      "teacher_id": "rice_teacher_v1_benchmark_candidate",
+      "model_path": "models/rice/distilled_students/rice_student_mobilenetv3_distilled_best.keras",
+      "model_sha256": "56862245495402c5bfc0b5c2da6a510df4a263d0e85304d74a9a40171f3eb174",
+      "file_size_bytes": 12702638,
+      "parameter_count": 3000196,
+      "distillation_parameters": {
+        "temperature": 3.0,
+        "alpha": 0.5,
+        "t_squared_scaling": 9.0
+      },
+      "dataset_version": "clean_dataset_v1",
+      "split_version": "split_manifest_v1",
+      "class_order": ["blast", "blight", "brown_spot", "healthy"],
+      "input_size": [224, 224, 3],
+      "preprocessing_version": "aspect_preserving_letterbox_v1",
+      "benchmark_metrics": {
+        "test_accuracy": 0.9959,
+        "test_macro_f1": 0.9937,
+        "blast_recall": 0.9722,
+        "ece": 0.0049,
+        "total_test_samples": 981
+      },
+      "source_confounding_status": "unresolved_source_domain_confounding",
+      "mobile_conversion_status": "pending_litert_conversion",
+      "release_status": "compact_benchmark_candidate",
+      "known_limitations": "The distilled student performed slightly below the supervised student on the current benchmark (99.59% vs 100.0%). Beneficial regularization or INT8 robustness remains an unverified hypothesis pending direct quantization benchmarks."
+    }
+  ]
+}

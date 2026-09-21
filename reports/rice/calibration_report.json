@@ -1,0 +1,125 @@
+{
+  "model": "rice_teacher_efficientnetb3_best.keras",
+  "sample_count": 981,
+  "expected_calibration_error": 0.00469,
+  "maximum_calibration_error": 0.63603,
+  "calibration_status": "EXCELLENT",
+  "confidence_statistics": {
+    "mean_confidence_overall": 0.9965,
+    "mean_confidence_correct": 0.9978,
+    "mean_confidence_errors": 0.8415,
+    "separation_delta": 0.1564
+  },
+  "bins": [
+    {
+      "bin_idx": 0,
+      "range": [
+        0.0,
+        0.1
+      ],
+      "sample_count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_idx": 1,
+      "range": [
+        0.1,
+        0.2
+      ],
+      "sample_count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_idx": 2,
+      "range": [
+        0.2,
+        0.3
+      ],
+      "sample_count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_idx": 3,
+      "range": [
+        0.3,
+        0.4
+      ],
+      "sample_count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_idx": 4,
+      "range": [
+        0.4,
+        0.5
+      ],
+      "sample_count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_idx": 5,
+      "range": [
+        0.5,
+        0.6
+      ],
+      "sample_count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "calibration_gap": 0.0
+    },
+    {
+      "bin_idx": 6,
+      "range": [
+        0.6,
+        0.7
+      ],
+      "sample_count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 0.636,
+      "calibration_gap": 0.636
+    },
+    {
+      "bin_idx": 7,
+      "range": [
+        0.7,
+        0.8
+      ],
+      "sample_count": 3,
+      "accuracy": 0.3333,
+      "mean_confidence": 0.7578,
+      "calibration_gap": 0.4245
+    },
+    {
+      "bin_idx": 8,
+      "range": [
+        0.8,
+        0.9
+      ],
+      "sample_count": 5,
+      "accuracy": 0.6,
+      "mean_confidence": 0.8859,
+      "calibration_gap": 0.2859
+    },
+    {
+      "bin_idx": 9,
+      "range": [
+        0.9,
+        1.0
+      ],
+      "sample_count": 972,
+      "accuracy": 0.9969,
+      "mean_confidence": 0.9982,
+      "calibration_gap": 0.0013
+    }
+  ]
+}

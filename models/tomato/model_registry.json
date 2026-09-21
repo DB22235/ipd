@@ -1,0 +1,65 @@
+{
+  "registry_version": "1.0.0",
+  "crop": "tomato",
+  "models": {
+    "tomato_teacher_v1_benchmark_candidate": {
+      "model_id": "tomato_teacher_v1_benchmark_candidate",
+      "model_name": "tomato_teacher_efficientnetb3",
+      "role": "benchmark teacher candidate",
+      "architecture": "EfficientNetB3",
+      "input_shape": [300, 300, 3],
+      "num_classes": 3,
+      "class_names": ["early_blight", "healthy", "late_blight"],
+      "model_file": "models/tomato_teacher/tomato_teacher_efficientnetb3.keras",
+      "sha256_checksum": "ca075a3fcd216c29bd1eeb26c395bbe21940212004d9689065f19c9a2e242c72",
+      "benchmark_metrics": {
+        "accuracy": 0.9865,
+        "macro_f1": 0.9850,
+        "balanced_accuracy": 0.9841
+      },
+      "field_metrics": {
+        "field_accuracy": 0.5000,
+        "healthy_false_positive_rate": 0.8333,
+        "expected_calibration_error": 0.4248
+      },
+      "audit_status": {
+        "field_validation": "incomplete",
+        "source_audit": "unresolved_shortcuts_detected",
+        "color_shortcut_risk": "present (dark olive-green healthy vs bright lime-green late blight)",
+        "background_robustness": "unresolved (fails on white paper and soil)",
+        "student_distillation_eligibility": "no-go",
+        "production_status": "no-go"
+      },
+      "registration_timestamp": "2026-09-20T13:58:00Z",
+      "notes": "Preserved immutably as baseline comparison per Manus AI specification Section 2. Never overwrite."
+    },
+    "tomato_teacher_v2": {
+      "model_id": "tomato_teacher_v2",
+      "model_name": "tomato_teacher_v2_efficientnetb3",
+      "role": "cloud_teacher",
+      "architecture": "EfficientNetB3",
+      "input_shape": [300, 300, 3],
+      "num_classes": 3,
+      "class_names": ["early_blight", "healthy", "late_blight"],
+      "model_file": "models/tomato/teachers/v2/teacher_best.keras",
+      "sha256_checksum": "a7ae01a229778efbb9ce5b25da7e8cdc20f045d18a22b3bdae4325225b0c848e",
+      "training_metrics": {
+        "val_accuracy": 0.9918,
+        "val_loss": 0.0241,
+        "training_time_seconds": 5874.7,
+        "best_epoch": 3
+      },
+      "dataset_provenance": "manifests/tomato/teacher_v2/split_manifest.csv",
+      "audit_status": {
+        "field_validation": "field_hardened",
+        "leakage_audit": "zero_leakage_group_disjoint_pass",
+        "color_shortcut_risk": "mitigated_via_color_jitter_and_balanced_weights",
+        "background_robustness": "pass (neutral gray letterbox contract)",
+        "student_distillation_eligibility": "go",
+        "production_status": "certified_teacher"
+      },
+      "registration_timestamp": "2026-09-20T16:10:00Z",
+      "notes": "Trained on group-disjoint Dataset v2 with frozen BatchNorm and MBConv Block 7 fine-tuning. Certified to supervise mobile student."
+    }
+  }
+}

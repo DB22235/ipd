@@ -1,0 +1,67 @@
+================================================================================
+       STEP 1: HARDWARE & ENVIRONMENT DIAGNOSTIC AUDIT
+================================================================================
+Python Executable : C:\Users\Dhruv Dube\Desktop\New folder\IPD reaseach papers\ipd\.venv\Scripts\python.exe
+Python Version    : 3.13.1
+Keras Version     : 3.15.1
+Keras Backend     : torch
+PyTorch Version   : 2.14.0+cu126
+CUDA Available    : True
+Torch CUDA Build  : 12.6
+GPU Device Name   : NVIDIA GeForce RTX 4050 Laptop GPU
+GPU Device Count  : 1
+Total VRAM        : 6.00 GB
+Compute Capability: (8, 9)
+
+Testing Model Parameter Placement on CUDA...
+Sample Weight Name  : kernel
+Sample Weight Device: cuda:0
+✓ ASSERTION PASSED: Model weights are physically allocated on CUDA.
+Input Tensor Device : cuda:0
+Output Tensor Device: cuda:0
+✓ ASSERTION PASSED: Forward computation executes directly on CUDA.
+
+--------------------------------------------------------------------------------
+NVIDIA-SMI System Output:
+--------------------------------------------------------------------------------
+Thu Sep 17 11:49:00 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 566.24                 Driver Version: 566.24         CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4050 ...  WDDM  |   00000000:01:00.0  On |                  N/A |
+| N/A   50C    P0              5W /   80W |     931MiB /   6141MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A      4756    C+G   ...nt.CBS_cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A      6172    C+G   C:\Windows\explorer.exe                     N/A      |
+|    0   N/A  N/A      6520    C+G   ...2txyewy\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A      7908    C+G   ...cw5n1h2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A      8248    C+G   ...002.0_x64__8wekyb3d8bbwe\Photos.exe      N/A      |
+|    0   N/A  N/A     13224    C+G   ...002.0_x64__8wekyb3d8bbwe\Photos.exe      N/A      |
+|    0   N/A  N/A     14964    C+G   ...Antigravity IDE\Antigravity IDE.exe      N/A      |
+|    0   N/A  N/A     15712    C+G   ...on\153.0.4234.32\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A     16324    C+G   ...n\NVIDIA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A     16892    C+G   ...n\NVIDIA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A     18800    C+G   C:\Windows\System32\NahimicSvc64.exe        N/A      |
+|    0   N/A  N/A     19872    C+G   ...CBS_cw5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A     21656    C+G   ...Antigravity IDE\Antigravity IDE.exe      N/A      |
+|    0   N/A  N/A     21920    C+G   ...Brave-Browser\Application\brave.exe      N/A      |
+|    0   N/A  N/A     25068    C+G   ...Brave-Browser\Application\brave.exe      N/A      |
+|    0   N/A  N/A     25392      C   D:\misc\python installer\python.exe         N/A      |
+|    0   N/A  N/A     25532    C+G   ...s\System32\ApplicationFrameHost.exe      N/A      |
+|    0   N/A  N/A     26132    C+G   C:\Windows\System32\ShellHost.exe           N/A      |
+|    0   N/A  N/A     28768    C+G   ...siveControlPanel\SystemSettings.exe      N/A      |
+|    0   N/A  N/A     31008    C+G   ...8bbwe\SnippingTool\SnippingTool.exe      N/A      |
+|    0   N/A  N/A     32572    C+G   ...5n1h2txyewy\ShellExperienceHost.exe      N/A      |
++-----------------------------------------------------------------------------------------+
+================================================================================

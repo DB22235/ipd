@@ -1,0 +1,40 @@
+{
+  "model_name": "potato_teacher_efficientnetb3",
+  "crop": "potato",
+  "architecture": "EfficientNetB3",
+  "pretrained_weights": "imagenet",
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "preprocessing": "builtin Keras 3 (Rescaling 1/255 + ImageNet Normalization)",
+  "num_classes": 3,
+  "class_names": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "model_file": "potato_teacher_efficientnetb3.keras",
+  "sha256_checksum": "eab26cba3f72dd18f55854f0b5115b0e2ec6c2996e7cf81ce8a635e7ee0f739a",
+  "training_protocol": {
+    "protocol": "Two-Stage Transfer Learning + Corrected Split Fast Fine-Tuning",
+    "stage_a_epochs": 15,
+    "stage_b_epochs": 15,
+    "finetune_epochs": 4,
+    "batch_size": 16,
+    "optimizer": "Adam",
+    "lr_finetune": 0.0001,
+    "unfreeze_layers": 45
+  },
+  "test_metrics": {
+    "accuracy": 0.991218441273326,
+    "macro_f1": 0.9911,
+    "weighted_f1": 0.9912,
+    "per_class_f1": {
+      "early_blight": 0.9914,
+      "healthy": 0.9902,
+      "late_blight": 0.9918
+    }
+  }
+}

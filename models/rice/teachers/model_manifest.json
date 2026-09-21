@@ -1,0 +1,40 @@
+{
+  "model_name": "rice_teacher_efficientnetb3",
+  "crop": "rice",
+  "architecture": "EfficientNetB3",
+  "classes": [
+    "blast",
+    "blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "batch_size": 16,
+  "metrics": {
+    "test_accuracy": 0.9918450560652395,
+    "macro_f1": 0.9878626692456479,
+    "weighted_f1": 0.9918304435904801,
+    "per_class_f1": {
+      "blast": 0.9787234042553191,
+      "blight": 0.9949494949494949,
+      "brown_spot": 0.9777777777777777,
+      "healthy": 1.0
+    },
+    "per_class_recall": {
+      "blast": 0.9583333333333334,
+      "blight": 1.0,
+      "brown_spot": 0.9887640449438202,
+      "healthy": 1.0
+    }
+  },
+  "fine_tuning": {
+    "stage1_epochs": 10,
+    "stage2_epochs": 15,
+    "stage1_duration_s": 3153.8558287620544,
+    "stage2_duration_s": 11301.277961492538
+  }
+}

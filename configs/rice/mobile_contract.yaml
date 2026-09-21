@@ -1,0 +1,43 @@
+# ==============================================================================
+# Rice Student Mobile Inference Contract
+# ==============================================================================
+project: ipd
+crop: rice
+target_platform: mobile_edge_offline
+framework: LiteRT / TensorFlow Lite
+
+# Target Performance Gates
+max_latency_ms: 50.0
+p95_latency_ms: 65.0
+max_file_size_mb: 20.0
+max_ram_usage_mb: 150.0
+
+# Class Mapping (Strict)
+classes:
+  0: blast
+  1: blight
+  2: brown_spot
+  3: healthy
+
+# Input Tensor Specification
+input_tensor:
+  shape: [1, 224, 224, 3]
+  dtype: float32
+  color_space: RGB
+  preprocessing:
+    method: aspect_preserving_letterbox
+    neutral_bg_fill: [114, 114, 114]
+    scaling: internal_mobilenet_rescaling_[-1, 1]
+
+# Output Tensor Specification
+output_tensor:
+  shape: [1, 4]
+  dtype: float32
+  activation: softmax_probabilities
+
+# Abstention Policy Gates
+abstention:
+  confidence_threshold: 0.60
+  entropy_threshold: 0.85
+  min_foliage_ratio: 0.04
+  user_message: "Uncertain result. Capture a closer, well-lit image of one rice leaf or use online analysis."

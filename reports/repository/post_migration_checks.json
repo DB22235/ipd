@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-09-18 15:53:08",
+  "status": "PASSED",
+  "total_checks_passed": 2,
+  "total_checks_failed": 0,
+  "checks_passed": [
+    "All 39 Python modules compiled successfully with zero syntax errors.",
+    "Rice teacher model checksum matches certified release: 2eca429..."
+  ],
+  "checks_failed": [],
+  "files_migrated_count": 11,
+  "migrated_files": [
+    {
+      "source": "rice_post_training_evaluation.md",
+      "destination": "docs\\specs\\rice_post_training_evaluation.md",
+      "sha256": "b13d1aef45b042b5731db41cf297e5527cd73e84898d104dafe790b352c749ee"
+    },
+    {
+      "source": "repo_organization_agent_prompt.md",
+      "destination": "docs\\specs\\repo_organization_agent_prompt.md",
+      "sha256": "bc707087ce1259d6d89e5a7d60008220008e02dada13cbf2cac20d08b7f1abdf"
+    },
+    {
+      "source": "leaf_isolator.py",
+      "destination": "src/preprocessing/leaf_isolator.py",
+      "sha256": "bf07bfa1cda4fae622c963beac30cadd2c53ad2444fb1f6bce95ff60cf1a8cc8"
+    },
+    {
+      "source": "train_local_rice_efficientnetb3.py",
+      "destination": "scripts\\training\\train_local_rice_efficientnetb3.py",
+      "sha256": "9f0ba5e9fe36c39e93579acaa5d3dcf1af45a983aa9f437937dbc55f7df3a533"
+    },
+    {
+      "source": "evaluate_rice_robustness.py",
+      "destination": "scripts\\evaluation\\evaluate_rice_robustness.py",
+      "sha256": "dda8cbf2b1600fc7610f6419f98052c234c0439467449f62cfb293e176614985"
+    },
+    {
+      "source": "finaldataset/manifests/exact_duplicates.csv",
+      "destination": "manifests/rice/exact_duplicates.csv",
+      "sha256": "419acc597fa5b4b8f1d62cd029632f0cc23acff6c9d3d0b74d0b711a9d3eca5e"
+    },
+    {
+      "source": "finaldataset/manifests/phash_duplicate_families.csv",
+      "destination": "manifests/rice/phash_duplicate_families.csv",
+      "sha256": "496a498c75301d8964916c68a82ce7c244bd3ce0bba65408217b4ec61bc5b5e9"
+    },
+    {
+      "source": "finaldataset/manifests/pre_audit_manifest.csv",
+      "destination": "manifests/rice/pre_audit_manifest.csv",
+      "sha256": "5a3de02dda23f90d2fd9e3e35a2bbb59fa8e76b3bf00b3bc57519d4423fb0c12"
+    },
+    {
+      "source": "finaldataset/manifests/split_manifest_v1.csv",
+      "destination": "manifests/rice/split_manifest_v1.csv",
+      "sha256": "c979baecdfd2cbaadd72f64daf0fc29f387c6fa343d5a249d0f9bc839860c838"
+    },
+    {
+      "source": "finaldataset/manifests/split_manifest_v1_backup.csv",
+      "destination": "manifests/rice/split_manifest_v1_backup.csv",
+      "sha256": "395669f63806b8f644fff603a4548dc92788bc0cf8c410aff74eaf972abfcb1a"
+    },
+    {
+      "source": "finaldataset/manifests/split_statistics_report.txt",
+      "destination": "manifests/rice/split_statistics_report.txt",
+      "sha256": "1cf68e4c77dc4d3359c380ddd98482949158145a507f60fad8b5c9ce9968a84a"
+    }
+  ]
+}

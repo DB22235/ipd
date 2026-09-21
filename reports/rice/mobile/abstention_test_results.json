@@ -1,0 +1,86 @@
+{
+  "supervised_stability_pct": 100.0,
+  "distilled_stability_pct": 100.0,
+  "perturbation_tests": [
+    {
+      "class_label": "blast",
+      "variant": "original",
+      "supervised_decision": "blast",
+      "supervised_conf": 1.0,
+      "supervised_stable": true,
+      "distilled_decision": "blast",
+      "distilled_conf": 1.0,
+      "distilled_stable": true
+    },
+    {
+      "class_label": "blast",
+      "variant": "brightness_high",
+      "supervised_decision": "blast",
+      "supervised_conf": 1.0,
+      "supervised_stable": true,
+      "distilled_decision": "blast",
+      "distilled_conf": 1.0,
+      "distilled_stable": true
+    },
+    {
+      "class_label": "blast",
+      "variant": "brightness_low",
+      "supervised_decision": "blast",
+      "supervised_conf": 1.0,
+      "supervised_stable": true,
+      "distilled_decision": "blast",
+      "distilled_conf": 1.0,
+      "distilled_stable": true
+    },
+    {
+      "class_label": "blast",
+      "variant": "rotated_cw",
+      "supervised_decision": "blast",
+      "supervised_conf": 0.9999,
+      "supervised_stable": true,
+      "distilled_decision": "blast",
+      "distilled_conf": 1.0,
+      "distilled_stable": true
+    },
+    {
+      "class_label": "blast",
+      "variant": "rotated_ccw",
+      "supervised_decision": "blast",
+      "supervised_conf": 0.9996,
+      "supervised_stable": true,
+      "distilled_decision": "blast",
+      "distilled_conf": 1.0,
+      "distilled_stable": true
+    },
+    {
+      "class_label": "blast",
+      "variant": "slight_zoom",
+      "supervised_decision": "blast",
+      "supervised_conf": 1.0,
+      "supervised_stable": true,
+      "distilled_decision": "blast",
+      "distilled_conf": 1.0,
+      "distilled_stable": true
+    }
+  ],
+  "edge_case_tests": [
+    {
+      "test_case": "pure_blank_canvas",
+      "description": "No foliage present",
+      "expected_behavior": "unsupported_input",
+      "supervised_decision": "unsupported_input",
+      "supervised_reason": "Insufficient foliage detected (0.0% < 5%)",
+      "distilled_decision": "unsupported_input",
+      "distilled_reason": "Insufficient foliage detected (0.0% < 5%)"
+    },
+    {
+      "test_case": "severe_synthetic_blur",
+      "description": "Severe blur applied",
+      "expected_behavior": "unsupported_input",
+      "supervised_decision": "unsupported_input",
+      "supervised_reason": "Severe image blur detected (Laplacian variance 0.3 < 40)",
+      "distilled_decision": "unsupported_input",
+      "distilled_reason": "Severe image blur detected (Laplacian variance 0.3 < 40)"
+    }
+  ]
+}

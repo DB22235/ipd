@@ -1,0 +1,64 @@
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "blast_recall": 1.0,
+  "expected_calibration_error": 0.0015172671596958953,
+  "per_class": {
+    "blast": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "blight": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "brown_spot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      142,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      196,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      176,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      122
+    ]
+  ],
+  "class_order": [
+    "blast",
+    "blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "independent_val_loss": 0.0017393489833921194,
+  "total_evaluated": 636
+}

@@ -1,0 +1,1011 @@
+{
+  "mean_area_ratio": 0.859,
+  "crop_success_rate": 60.0,
+  "engine_counts": {
+    "grabcut": 50,
+    "saliency": 0,
+    "fallback": 0
+  },
+  "records": [
+    {
+      "file": "82660.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        62,
+        3,
+        200,
+        222
+      ],
+      "area_ratio": 0.602,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81154.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        11,
+        0,
+        224,
+        224
+      ],
+      "area_ratio": 0.951,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "80649.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        10,
+        9,
+        194,
+        224
+      ],
+      "area_ratio": 0.788,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83258.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        224
+      ],
+      "area_ratio": 1.0,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95577.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        224
+      ],
+      "area_ratio": 1.0,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95386.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        13,
+        2,
+        224,
+        214
+      ],
+      "area_ratio": 0.892,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95253.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        7,
+        1,
+        224,
+        201
+      ],
+      "area_ratio": 0.865,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81314.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        22,
+        0,
+        217,
+        224
+      ],
+      "area_ratio": 0.871,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83226.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        34,
+        18,
+        214,
+        224
+      ],
+      "area_ratio": 0.739,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81098.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        2,
+        9,
+        215,
+        210
+      ],
+      "area_ratio": 0.853,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "82870.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        224
+      ],
+      "area_ratio": 1.0,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83252.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        12,
+        27,
+        188,
+        201
+      ],
+      "area_ratio": 0.61,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": false
+      }
+    },
+    {
+      "file": "82111.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        29,
+        41,
+        180,
+        185
+      ],
+      "area_ratio": 0.433,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": false
+      }
+    },
+    {
+      "file": "81010.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        2,
+        0,
+        207,
+        223
+      ],
+      "area_ratio": 0.911,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "82387.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        47,
+        2,
+        159,
+        224
+      ],
+      "area_ratio": 0.496,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "96431.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        3,
+        0,
+        197,
+        224
+      ],
+      "area_ratio": 0.866,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "80686.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        12,
+        0,
+        224,
+        211
+      ],
+      "area_ratio": 0.892,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "80678.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        15,
+        222,
+        216
+      ],
+      "area_ratio": 0.889,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81050.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        220
+      ],
+      "area_ratio": 0.982,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95224.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        219,
+        219
+      ],
+      "area_ratio": 0.956,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95310.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        7,
+        0,
+        224,
+        222
+      ],
+      "area_ratio": 0.96,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81862.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        1,
+        224,
+        224
+      ],
+      "area_ratio": 0.996,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "82454.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        69,
+        0,
+        219,
+        224
+      ],
+      "area_ratio": 0.67,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "80655.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        26,
+        0,
+        208,
+        212
+      ],
+      "area_ratio": 0.769,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "82215.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        2,
+        22,
+        191,
+        223
+      ],
+      "area_ratio": 0.757,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95117.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        4,
+        0,
+        215,
+        206
+      ],
+      "area_ratio": 0.866,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83113.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        218
+      ],
+      "area_ratio": 0.973,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "82725.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        224
+      ],
+      "area_ratio": 1.0,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83026.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        1,
+        23,
+        198,
+        186
+      ],
+      "area_ratio": 0.64,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "82110.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        48,
+        7,
+        162,
+        223
+      ],
+      "area_ratio": 0.491,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "96420.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        210
+      ],
+      "area_ratio": 0.938,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95235.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        10,
+        0,
+        217,
+        224
+      ],
+      "area_ratio": 0.924,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81549.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        217,
+        224
+      ],
+      "area_ratio": 0.969,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "82380.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        220,
+        224
+      ],
+      "area_ratio": 0.982,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95594.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        8,
+        0,
+        208,
+        224
+      ],
+      "area_ratio": 0.893,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "80547.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        224,
+        224
+      ],
+      "area_ratio": 1.0,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83361.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        12,
+        2,
+        224,
+        190
+      ],
+      "area_ratio": 0.794,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81444.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        1,
+        1,
+        196,
+        224
+      ],
+      "area_ratio": 0.867,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83005.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        8,
+        220,
+        224
+      ],
+      "area_ratio": 0.947,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "96434.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        3,
+        0,
+        221,
+        224
+      ],
+      "area_ratio": 0.973,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95953.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        17,
+        0,
+        223,
+        224
+      ],
+      "area_ratio": 0.92,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95592.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        2,
+        0,
+        224,
+        224
+      ],
+      "area_ratio": 0.991,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81418.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        21,
+        0,
+        206,
+        218
+      ],
+      "area_ratio": 0.804,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95207.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        6,
+        13,
+        224,
+        223
+      ],
+      "area_ratio": 0.912,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "83384.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        6,
+        0,
+        214,
+        223
+      ],
+      "area_ratio": 0.924,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "95933.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        26,
+        0,
+        212,
+        224
+      ],
+      "area_ratio": 0.83,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81095.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        0,
+        212,
+        224
+      ],
+      "area_ratio": 0.946,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": true,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81044.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        0,
+        1,
+        224,
+        200
+      ],
+      "area_ratio": 0.888,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "96180.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        13,
+        0,
+        209,
+        224
+      ],
+      "area_ratio": 0.875,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    },
+    {
+      "file": "81067.jpg",
+      "engine": "GrabCut (OpenCV)",
+      "orig_resolution": [
+        224,
+        224
+      ],
+      "bbox": [
+        11,
+        7,
+        209,
+        224
+      ],
+      "area_ratio": 0.856,
+      "quality_flags": {
+        "too_tight": false,
+        "too_loose": false,
+        "touches_boundary": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+SHA-256: 2eca4294596905fb6231911b66cbeafc90ac8528ecd34461327b43074ec9e738  rice_teacher_efficientnetb3_best.keras

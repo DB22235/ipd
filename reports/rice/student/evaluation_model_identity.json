@@ -1,0 +1,24 @@
+{
+  "model_file": "rice_student_mobilenetv3_baseline_best.keras",
+  "model_sha256": "07e8a3ae6b315286723d454ed0ce947f3805ed80bc96de3d95e4e7d23fe326f6",
+  "file_size_mb": 34.94,
+  "total_parameters": 3000196,
+  "trainable_parameters": 2975796,
+  "input_shape": [
+    null,
+    224,
+    224,
+    3
+  ],
+  "output_shape": [
+    null,
+    4
+  ],
+  "class_order": [
+    "blast",
+    "blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "status": "PASS"
+}

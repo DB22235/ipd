@@ -1,0 +1,16 @@
+{
+  "total_images_evaluated": 162,
+  "float16_parity": {
+    "agreement_percentage": 100.0,
+    "mismatch_count": 0,
+    "max_probability_delta": 0.01308,
+    "field_holdout_agreement_count": 12,
+    "field_holdout_total": 12
+  },
+  "int8_parity": {
+    "agreement_percentage": 67.9,
+    "mismatch_count": 52,
+    "max_probability_delta": 1.0
+  },
+  "pass_status": true
+}

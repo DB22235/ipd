@@ -1,0 +1,524 @@
+{
+  "supervised_student": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "predictions": [
+      {
+        "id": "rice_field_01",
+        "filename": "blast/blast_test_00001.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9999997615814209,
+        "correct": true,
+        "probabilities": {
+          "blast": 1.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_02",
+        "filename": "blast/blast_test_00011.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9999998807907104,
+        "correct": true,
+        "probabilities": {
+          "blast": 1.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_03",
+        "filename": "blast/blast_test_00016.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9999995231628418,
+        "correct": true,
+        "probabilities": {
+          "blast": 1.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_04",
+        "filename": "blight/blight_test_00002.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9999796152114868,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 1.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_05",
+        "filename": "blight/blight_test_00012.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9999948740005493,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 1.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_06",
+        "filename": "blight/blight_test_00014.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9999963045120239,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 1.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_07",
+        "filename": "brown_spot/brown_spot_test_00011.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.999871015548706,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0001,
+          "blight": 0.0,
+          "brown_spot": 0.9999,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_08",
+        "filename": "brown_spot/brown_spot_test_00019.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9989461302757263,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.001,
+          "brown_spot": 0.9989,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_09",
+        "filename": "brown_spot/brown_spot_test_00022.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9997795224189758,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0002,
+          "blight": 0.0,
+          "brown_spot": 0.9998,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_10",
+        "filename": "healthy/IMG_20190419_100026.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999833106994629,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 1.0
+        }
+      },
+      {
+        "id": "rice_field_11",
+        "filename": "healthy/IMG_20190419_110144.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999924898147583,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 1.0
+        }
+      },
+      {
+        "id": "rice_field_12",
+        "filename": "healthy/IMG_20190424_130033.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999850988388062,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 1.0
+        }
+      }
+    ]
+  },
+  "distilled_student": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "predictions": [
+      {
+        "id": "rice_field_01",
+        "filename": "blast/blast_test_00001.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.999993085861206,
+        "correct": true,
+        "probabilities": {
+          "blast": 1.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_02",
+        "filename": "blast/blast_test_00011.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9999959468841553,
+        "correct": true,
+        "probabilities": {
+          "blast": 1.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_03",
+        "filename": "blast/blast_test_00016.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9994254112243652,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.9994,
+          "blight": 0.0004,
+          "brown_spot": 0.0002,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_04",
+        "filename": "blight/blight_test_00002.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9988052845001221,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0006,
+          "blight": 0.9988,
+          "brown_spot": 0.0005,
+          "healthy": 0.0001
+        }
+      },
+      {
+        "id": "rice_field_05",
+        "filename": "blight/blight_test_00012.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9997199177742004,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0001,
+          "blight": 0.9997,
+          "brown_spot": 0.0002,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_06",
+        "filename": "blight/blight_test_00014.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9985224604606628,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0003,
+          "blight": 0.9985,
+          "brown_spot": 0.0011,
+          "healthy": 0.0001
+        }
+      },
+      {
+        "id": "rice_field_07",
+        "filename": "brown_spot/brown_spot_test_00011.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9996011853218079,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0003,
+          "blight": 0.0001,
+          "brown_spot": 0.9996,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_08",
+        "filename": "brown_spot/brown_spot_test_00019.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9939361214637756,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0005,
+          "blight": 0.0052,
+          "brown_spot": 0.9939,
+          "healthy": 0.0004
+        }
+      },
+      {
+        "id": "rice_field_09",
+        "filename": "brown_spot/brown_spot_test_00022.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9994319081306458,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0004,
+          "blight": 0.0001,
+          "brown_spot": 0.9994,
+          "healthy": 0.0001
+        }
+      },
+      {
+        "id": "rice_field_10",
+        "filename": "healthy/IMG_20190419_100026.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999685287475586,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 1.0
+        }
+      },
+      {
+        "id": "rice_field_11",
+        "filename": "healthy/IMG_20190419_110144.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999136924743652,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0001,
+          "healthy": 0.9999
+        }
+      },
+      {
+        "id": "rice_field_12",
+        "filename": "healthy/IMG_20190424_130033.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999167919158936,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 0.9999
+        }
+      }
+    ]
+  },
+  "teacher": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "predictions": [
+      {
+        "id": "rice_field_01",
+        "filename": "blast/blast_test_00001.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9999992847442627,
+        "correct": true,
+        "probabilities": {
+          "blast": 1.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_02",
+        "filename": "blast/blast_test_00011.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9998641014099121,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.9999,
+          "blight": 0.0,
+          "brown_spot": 0.0001,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_03",
+        "filename": "blast/blast_test_00016.jpg",
+        "ground_truth": "blast",
+        "predicted_class": "blast",
+        "predicted_confidence": 0.9971987009048462,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.9972,
+          "blight": 0.0028,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_04",
+        "filename": "blight/blight_test_00002.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9998356103897095,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0001,
+          "blight": 0.9998,
+          "brown_spot": 0.0,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_05",
+        "filename": "blight/blight_test_00012.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9993993043899536,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.9994,
+          "brown_spot": 0.0006,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_06",
+        "filename": "blight/blight_test_00014.jpg",
+        "ground_truth": "blight",
+        "predicted_class": "blight",
+        "predicted_confidence": 0.9985332489013672,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0002,
+          "blight": 0.9985,
+          "brown_spot": 0.0012,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_07",
+        "filename": "brown_spot/brown_spot_test_00011.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9990518689155579,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0009,
+          "blight": 0.0,
+          "brown_spot": 0.9991,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_08",
+        "filename": "brown_spot/brown_spot_test_00019.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9956138134002686,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0015,
+          "blight": 0.0029,
+          "brown_spot": 0.9956,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_09",
+        "filename": "brown_spot/brown_spot_test_00022.jpg",
+        "ground_truth": "brown_spot",
+        "predicted_class": "brown_spot",
+        "predicted_confidence": 0.9980987906455994,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0017,
+          "blight": 0.0002,
+          "brown_spot": 0.9981,
+          "healthy": 0.0
+        }
+      },
+      {
+        "id": "rice_field_10",
+        "filename": "healthy/IMG_20190419_100026.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999948740005493,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 1.0
+        }
+      },
+      {
+        "id": "rice_field_11",
+        "filename": "healthy/IMG_20190419_110144.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999693632125854,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 1.0
+        }
+      },
+      {
+        "id": "rice_field_12",
+        "filename": "healthy/IMG_20190424_130033.jpg",
+        "ground_truth": "healthy",
+        "predicted_class": "healthy",
+        "predicted_confidence": 0.9999985694885254,
+        "correct": true,
+        "probabilities": {
+          "blast": 0.0,
+          "blight": 0.0,
+          "brown_spot": 0.0,
+          "healthy": 1.0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model_name": "tomato_teacher_v2_efficientnetb3",
+  "version": "2.0.0",
+  "crop": "tomato",
+  "role": "cloud_teacher",
+  "sha256_checksum": "a7ae01a229778efbb9ce5b25da7e8cdc20f045d18a22b3bdae4325225b0c848e",
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "num_classes": 3,
+  "preprocessing": "aspect_preserving_letterbox_rgb114"
+}

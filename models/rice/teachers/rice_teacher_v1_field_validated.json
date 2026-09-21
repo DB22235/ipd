@@ -1,0 +1,61 @@
+{
+  "release_version": "rice_teacher_v1_field_validated",
+  "status": "FROZEN_AND_ACCEPTED",
+  "crop": "rice",
+  "architecture": "EfficientNetB3 (Two-Stage Transfer Learning)",
+  "framework": "Keras 3 with PyTorch CUDA Backend (torch)",
+  "model_file": "rice_teacher_efficientnetb3_best.keras",
+  "sha256_checksum": "2eca4294596905fb6231911b66cbeafc90ac8528ecd34461327b43074ec9e738",
+  "file_size_mb": 69.45,
+  "input_contract": {
+    "target_size": [
+      300,
+      300
+    ],
+    "channels": 3,
+    "preprocessing": "aspect_preserving_letterbox",
+    "border_fill": [
+      114,
+      114,
+      114
+    ],
+    "color_space": "RGB",
+    "normalization": "none (built-in EfficientNet scaling layer)"
+  },
+  "classes": [
+    "blast",
+    "blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "class_mapping": {
+    "0": "blast",
+    "1": "blight",
+    "2": "brown_spot",
+    "3": "healthy"
+  },
+  "split_version": "rice_split_v1 (leakage-safe, group-disjoint)",
+  "validation_gates": {
+    "locked_test_accuracy": 0.9918,
+    "locked_test_macro_f1": 0.9879,
+    "field_holdout_accuracy": 1.0,
+    "expected_calibration_error": 0.0047,
+    "background_invariance_gate": "PASSED (0.0% spurious background flips)",
+    "biological_causality_gate": "PASSED (lesion-responsive)"
+  },
+  "abstention_policy": {
+    "confidence_threshold": 0.6,
+    "entropy_threshold": 0.85,
+    "min_foliage_ratio": 0.04,
+    "user_message": "Uncertain result. Capture a closer, well-lit image of one rice leaf or use online analysis."
+  },
+  "downstream_student_readiness": {
+    "eligible_for_distillation": true,
+    "recommended_student_candidates": [
+      "MobileNetV3-Large",
+      "MobileNetV3-Small",
+      "MobileNetV2"
+    ],
+    "kd_loss_formulation": "alpha * CE(y, student_logits) + (1 - alpha) * T^2 * KL(softmax(teacher_logits / T), softmax(student_logits / T))"
+  }
+}

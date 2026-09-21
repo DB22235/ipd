@@ -1,0 +1,45 @@
+# ==============================================================================
+# Rice Student Model Baseline Configuration (Supervised Training)
+# ==============================================================================
+project: ipd
+crop: rice
+model_role: student_baseline
+architecture: MobileNetV3Large
+
+# Class contract strictly aligned with frozen teacher v1
+classes:
+  - blast
+  - blight
+  - brown_spot
+  - healthy
+
+# Input and Preprocessing specifications
+input_size: [224, 224]
+channels: 3
+preprocessing: aspect_preserving_letterbox
+neutral_fill: [114, 114, 114]
+pixel_range: [0.0, 255.0]
+
+# Manifest and Data Partitioning
+split_manifest: manifests/rice/split_manifest_v1.csv
+seed: 42
+batch_size: 16
+use_class_weights: true
+
+# Training Optimization Parameters
+max_epochs: 30
+early_stopping_patience: 6
+optimizer: adamw
+learning_rate: 0.0001
+weight_decay: 0.0001
+dropout_rate: 0.25
+
+# Execution and Hardware
+backend: torch
+target_device: cuda
+mixed_precision: false
+
+# Storage and Artifacts
+output_dir: models/rice/student_baselines
+checkpoint_name: rice_student_mobilenetv3_baseline_best.keras
+reports_dir: reports/rice/student

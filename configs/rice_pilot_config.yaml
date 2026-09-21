@@ -1,0 +1,79 @@
+# ==============================================================================
+# IPD Rice Teacher Model Pilot Configuration
+# Authoritative configuration for EfficientNetB3 Rice Pilot on Windows RTX 4050
+# ==============================================================================
+
+crop: "rice"
+classes:
+  - "blast"
+  - "blight"
+  - "brown_spot"
+  - "healthy"
+
+input:
+  target_size: [300, 300]
+  channels: 3
+  letterbox_bg: [114, 114, 114]  # Neutral agricultural gray border fill
+
+paths:
+  dataset_root: "clean_dataset/rice_dataset"
+  train_dir: "clean_dataset/rice_dataset/train"
+  val_dir: "clean_dataset/rice_dataset/val"
+  test_dir: "clean_dataset/rice_dataset/test"
+  split_manifest: "finaldataset/manifests/split_manifest_v1.csv"
+  field_holdout_dir: "field_test_images/rice"
+  field_manifest: "field_test_images/rice/field_holdout_manifest.json"
+  model_save_dir: "models/rice_teacher_v1"
+  audit_reports_dir: "audit_reports/rice"
+
+hardware:
+  backend: "torch"
+  mixed_precision: true
+  device: "cuda:0"
+  target_gpu: "NVIDIA GeForce RTX 4050 Laptop GPU (6GB VRAM)"
+
+training:
+  backbone: "EfficientNetB3"
+  weights: "imagenet"
+  batch_size: 16
+  seed: 42
+  dropout_rate: 0.35
+  
+  # Stage 1: Classification Head Warmup (Backbone Frozen)
+  stage1:
+    epochs: 10
+    learning_rate: 1.0e-4
+    weight_decay: 1.0e-4
+    patience: 4
+    
+  # Stage 2: Controlled Fine-Tuning (Block 7 Unfrozen, BatchNorm Frozen)
+  stage2:
+    epochs: 15
+    learning_rate: 1.0e-5
+    weight_decay: 1.0e-4
+    patience: 5
+    unfreeze_from_layer: "block7a_se_squeeze"
+
+# Anti-Shortcut Domain Invariance Controls
+anti_shortcut:
+  jpeg_degradation:
+    enabled: true
+    min_quality: 40
+    max_quality: 95
+  gaussian_blur:
+    enabled: true
+    probability: 0.25
+    sigma_range: [0.2, 1.2]
+  color_jitter:
+    brightness: 0.15
+    contrast: 0.20
+    saturation: 0.20
+    hue: 0.08
+  horizontal_flip: true
+  vertical_flip: false  # Biologically invalid for upright rice tillers
+
+# Production Acceptance & Abstention Gates
+abstention:
+  confidence_threshold: 0.60
+  entropy_threshold: 0.85
+  min_foliage_ratio: 0.20

@@ -1,0 +1,4 @@
+source,early_blight,healthy,late_blight,unassigned,All
+tomato,1000,1585,1901,12,4498
+tomato_dataset,1000,1585,1901,0,4486
+All,2000,3170,3802,12,8984

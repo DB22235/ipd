@@ -1,0 +1,58 @@
+{
+  "accuracy": 0.994280266920877,
+  "balanced_accuracy": 0.9946380697050938,
+  "macro_f1": 0.9942663517449533,
+  "weighted_f1": 0.9942700809634522,
+  "brier_score": 0.00989999770365059,
+  "per_class": {
+    "early_blight": {
+      "precision": 0.992462311557789,
+      "recall": 1.0,
+      "f1": 0.9962168978562421,
+      "specificity": 0.9954128440366973,
+      "false_positive_rate": 0.0045871559633027525,
+      "false_negative_rate": 0.0,
+      "support": 395
+    },
+    "healthy": {
+      "precision": 0.9894366197183099,
+      "recall": 1.0,
+      "f1": 0.9946902654867257,
+      "specificity": 0.99609375,
+      "false_positive_rate": 0.00390625,
+      "false_negative_rate": 0.0,
+      "support": 281
+    },
+    "late_blight": {
+      "precision": 1.0,
+      "recall": 0.9839142091152815,
+      "f1": 0.9918918918918919,
+      "specificity": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0160857908847185,
+      "support": 373
+    }
+  },
+  "confusion_matrix": [
+    [
+      395,
+      0,
+      0
+    ],
+    [
+      0,
+      281,
+      0
+    ],
+    [
+      3,
+      3,
+      367
+    ]
+  ],
+  "class_names": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ]
+}

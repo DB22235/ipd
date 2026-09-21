@@ -1,0 +1,45 @@
+{
+  "model_name": "tomato_teacher_efficientnetb3",
+  "model_version": "2.1.0-field-hardened",
+  "crop": "tomato",
+  "architecture": "EfficientNetB3",
+  "pretrained_weights": "imagenet",
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "preprocessing": "Field-Robust Augmentation (Zoom Crop, Color Jitter, Random Erasing) + Keras 3 Builtin Normalization",
+  "num_classes": 3,
+  "class_names": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "model_file": "tomato_teacher_efficientnetb3.keras",
+  "sha256_checksum": "ca075a3fcd216c29bd1eeb26c395bbe21940212004d9689065f19c9a2e242c72",
+  "training_protocol": {
+    "stage_a_epochs": 15,
+    "stage_b_epochs": 15,
+    "batch_size": 16,
+    "head_dropout": 0.4,
+    "unfreeze_layers": 40,
+    "lr_stage_a": 0.001,
+    "lr_stage_b": 5e-05,
+    "early_stopping_patience": 7,
+    "optimizer": "Adam"
+  },
+  "test_metrics": {
+    "accuracy": 0.9865470852017937,
+    "macro_f1": 0.9850138616231722,
+    "balanced_accuracy": 0.9841194819926269,
+    "weighted_f1": 0.9865200876936094,
+    "auroc_macro_ovr": 0.9985382954871497
+  },
+  "field_hardening": {
+    "unfreeze_layers": 30,
+    "fine_tune_lr": 3e-05,
+    "background_destruction_augmented": true,
+    "test_accuracy": 0.9895366430282593
+  }
+}

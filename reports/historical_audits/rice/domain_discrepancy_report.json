@@ -1,0 +1,126 @@
+{
+  "audit_target": "Rice Dataset (4 Classes)",
+  "source_mapping": {
+    "blast": "RiceDisease_Unknown",
+    "blight": "RiceDisease_Unknown",
+    "brown_spot": "RiceDisease_Unknown",
+    "healthy": "RiceHealthyField_20190419"
+  },
+  "classes": {
+    "blast": {
+      "class_name": "blast",
+      "total_train_images": 674,
+      "audited_samples": 150,
+      "dimensions": {
+        "min_width": 224,
+        "max_width": 224,
+        "min_height": 224,
+        "max_height": 224
+      },
+      "file_size_bytes": {
+        "mean": 16590.826666666668,
+        "median": 16190.5,
+        "std": 3276.5938243785354
+      },
+      "mean_color_channels": {
+        "red": 108.73087850765307,
+        "green": 121.87320936968538,
+        "blue": 83.33468484268708,
+        "dominant_channel": "Green"
+      },
+      "corner_blue_channel_mean": 90.52177083333333,
+      "high_freq_laplacian_var": {
+        "mean": 254.2285205732842,
+        "median": 212.60178970327382
+      }
+    },
+    "blight": {
+      "class_name": "blight",
+      "total_train_images": 891,
+      "audited_samples": 150,
+      "dimensions": {
+        "min_width": 224,
+        "max_width": 224,
+        "min_height": 224,
+        "max_height": 224
+      },
+      "file_size_bytes": {
+        "mean": 21340.286666666667,
+        "median": 20790.5,
+        "std": 4361.683305539527
+      },
+      "mean_color_channels": {
+        "red": 112.60455091411563,
+        "green": 127.82660049957482,
+        "blue": 69.66551737882654,
+        "dominant_channel": "Green"
+      },
+      "corner_blue_channel_mean": 65.41109375,
+      "high_freq_laplacian_var": {
+        "mean": 599.0412334414865,
+        "median": 513.0327687571317
+      }
+    },
+    "brown_spot": {
+      "class_name": "brown_spot",
+      "total_train_images": 846,
+      "audited_samples": 150,
+      "dimensions": {
+        "min_width": 224,
+        "max_width": 224,
+        "min_height": 224,
+        "max_height": 224
+      },
+      "file_size_bytes": {
+        "mean": 15567.206666666667,
+        "median": 15018.0,
+        "std": 3522.7305456547324
+      },
+      "mean_color_channels": {
+        "red": 117.89443970556972,
+        "green": 154.81245708439624,
+        "blue": 75.89741709183673,
+        "dominant_channel": "Green"
+      },
+      "corner_blue_channel_mean": 109.14322916666667,
+      "high_freq_laplacian_var": {
+        "mean": 176.15120825006616,
+        "median": 104.19047740140294
+      }
+    },
+    "healthy": {
+      "class_name": "healthy",
+      "total_train_images": 904,
+      "audited_samples": 150,
+      "dimensions": {
+        "min_width": 256,
+        "max_width": 256,
+        "min_height": 256,
+        "max_height": 256
+      },
+      "file_size_bytes": {
+        "mean": 5044.953333333333,
+        "median": 5136.0,
+        "std": 769.4862037894002
+      },
+      "mean_color_channels": {
+        "red": 201.16791341145833,
+        "green": 205.81947214762369,
+        "blue": 224.23432891845704,
+        "dominant_channel": "Blue"
+      },
+      "corner_blue_channel_mean": 233.54317708333335,
+      "high_freq_laplacian_var": {
+        "mean": 95.82256815059421,
+        "median": 93.18773617071565
+      }
+    }
+  },
+  "forensic_risk_assessment": {
+    "source_confounding_severity": "CRITICAL",
+    "healthy_vs_diseased_corner_blue_delta": 145.18447916666668,
+    "compression_size_ratio": 3.2885986391681197,
+    "verdict": "CRITICAL SHORTCUT DETECTED: Healthy class images possess strong sky/backdrop blue bias (corner B > 220) and aggressive JPEG compression (~5.2 KB) completely absent in the 3 diseased classes (corner B < 80, ~17 KB). Naive training will learn background color and compression shortcuts.",
+    "mandatory_countermeasure": "RiceAntiShortcutAugmentation with dynamic JPEG quality randomization, subtle blur, and aspect letterboxing must be enforced."
+  }
+}

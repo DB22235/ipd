@@ -1,0 +1,22 @@
+{
+  "teacher": {
+    "accuracy": 0.9918450560652395,
+    "macro_f1": 0.9878626692456479,
+    "blast_recall": 0.9583333333333334,
+    "parameters": 12236700
+  },
+  "supervised_student": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "blast_recall": 1.0,
+    "ece": 0.0005708430399102417,
+    "parameters": 3000196
+  },
+  "distilled_student": {
+    "accuracy": 0.9959225280326198,
+    "macro_f1": 0.9937010954616589,
+    "blast_recall": 0.9722222222222222,
+    "ece": 0.004874878520265632,
+    "parameters": 3000196
+  }
+}

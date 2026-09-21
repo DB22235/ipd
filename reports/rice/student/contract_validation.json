@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "teacher_sha256": {
+      "status": "PASS",
+      "file": "models\\rice_teacher_v1\\rice_teacher_efficientnetb3_best.keras",
+      "sha256": "2eca4294596905fb6231911b66cbeafc90ac8528ecd34461327b43074ec9e738"
+    },
+    "teacher_manifest": {
+      "status": "PASS",
+      "release_version": "rice_teacher_v1_field_validated",
+      "class_mapping": {
+        "0": "blast",
+        "1": "blight",
+        "2": "brown_spot",
+        "3": "healthy"
+      }
+    },
+    "split_manifest": {
+      "status": "PASS",
+      "file": "manifests\\rice\\split_manifest_v1.csv",
+      "total_rice_samples": 4932,
+      "partitions": {
+        "train": 3315,
+        "test": 981,
+        "val": 636
+      },
+      "classes": [
+        "blast",
+        "blight",
+        "brown_spot",
+        "healthy"
+      ]
+    }
+  },
+  "passed": true,
+  "status": "ALL_CONTRACTS_PASSED"
+}

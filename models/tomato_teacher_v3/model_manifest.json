@@ -1,0 +1,33 @@
+{
+  "model_name": "tomato_teacher_b3_lean",
+  "architecture": "EfficientNetB3",
+  "head_type": "lean",
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "batch_size": 16,
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "metrics": {
+    "test_accuracy": 0.980567991733551,
+    "macro_f1": 0.9786819082037291,
+    "weighted_f1": 0.980578371904383,
+    "per_class_f1": {
+      "early_blight": 0.9632107023411371,
+      "healthy": 0.9957627118644068,
+      "late_blight": 0.9770723104056437
+    }
+  },
+  "fine_tuning": {
+    "strategy": "MBConv Block 7 unfreeze with frozen BatchNorm",
+    "epochs_s1": 15,
+    "epochs_s2": 15,
+    "seconds_per_epoch_s1": 327.9,
+    "seconds_per_epoch_s2": 294.7
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "model_path": "tomato_teacher_efficientnetb3_best.keras",
+  "total_field_samples": 12,
+  "raw_accuracy": 50.0,
+  "macro_f1": 51.43,
+  "healthy_false_positive_rate": 83.33,
+  "expected_calibration_error": 0.4248,
+  "selective_accuracy": 60.0,
+  "abstained_count": 2,
+  "acceptance_gate_passed": false,
+  "records": [
+    {
+      "filename": "tomatotest1.webp",
+      "ground_truth": "early_blight",
+      "prediction": "early_blight",
+      "confidence": 0.7469,
+      "entropy": 0.6458,
+      "abstained": false,
+      "correct": true,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.7469,
+        "healthy": 0.0243,
+        "late_blight": 0.2288
+      }
+    },
+    {
+      "filename": "tomatotest2.webp",
+      "ground_truth": "early_blight",
+      "prediction": "early_blight",
+      "confidence": 0.9123,
+      "entropy": 0.3164,
+      "abstained": false,
+      "correct": true,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.9123,
+        "healthy": 0.0051,
+        "late_blight": 0.0826
+      }
+    },
+    {
+      "filename": "tomatotest3.webp",
+      "ground_truth": "late_blight",
+      "prediction": "late_blight",
+      "confidence": 0.9994,
+      "entropy": 0.0056,
+      "abstained": false,
+      "correct": true,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.0004,
+        "healthy": 0.0002,
+        "late_blight": 0.9994
+      }
+    },
+    {
+      "filename": "tomatotest4.webp",
+      "ground_truth": "early_blight",
+      "prediction": "early_blight",
+      "confidence": 0.8877,
+      "entropy": 0.3714,
+      "abstained": false,
+      "correct": true,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.8877,
+        "healthy": 0.0049,
+        "late_blight": 0.1074
+      }
+    },
+    {
+      "filename": "tomatotest5.webp",
+      "ground_truth": "late_blight",
+      "prediction": "early_blight",
+      "confidence": 0.4754,
+      "entropy": 0.8665,
+      "abstained": true,
+      "correct": false,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.4754,
+        "healthy": 0.0543,
+        "late_blight": 0.4703
+      }
+    },
+    {
+      "filename": "tomatotest6.webp",
+      "ground_truth": "late_blight",
+      "prediction": "late_blight",
+      "confidence": 0.9998,
+      "entropy": 0.0019,
+      "abstained": false,
+      "correct": true,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.0001,
+        "healthy": 0.0001,
+        "late_blight": 0.9998
+      }
+    },
+    {
+      "filename": "tomatotest7.webp",
+      "ground_truth": "healthy",
+      "prediction": "late_blight",
+      "confidence": 0.9397,
+      "entropy": 0.2559,
+      "abstained": false,
+      "correct": false,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.0497,
+        "healthy": 0.0106,
+        "late_blight": 0.9397
+      }
+    },
+    {
+      "filename": "tomatotest8.webp",
+      "ground_truth": "healthy",
+      "prediction": "healthy",
+      "confidence": 0.7797,
+      "entropy": 0.6763,
+      "abstained": false,
+      "correct": true,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.1303,
+        "healthy": 0.7797,
+        "late_blight": 0.09
+      }
+    },
+    {
+      "filename": "tomatotest9.webp",
+      "ground_truth": "healthy",
+      "prediction": "late_blight",
+      "confidence": 0.9302,
+      "entropy": 0.3014,
+      "abstained": false,
+      "correct": false,
+      "studio_white_normalized": false,
+      "probabilities": {
+        "early_blight": 0.033,
+        "healthy": 0.0368,
+        "late_blight": 0.9302
+      }
+    },
+    {
+      "filename": "tomatotest10.webp",
+      "ground_truth": "healthy",
+      "prediction": "late_blight",
+      "confidence": 0.5324,
+      "entropy": 0.9347,
+      "abstained": true,
+      "correct": false,
+      "studio_white_normalized": true,
+      "probabilities": {
+        "early_blight": 0.1007,
+        "healthy": 0.3669,
+        "late_blight": 0.5324
+      }
+    },
+    {
+      "filename": "tomatotest11.webp",
+      "ground_truth": "healthy",
+      "prediction": "late_blight",
+      "confidence": 0.9759,
+      "entropy": 0.1302,
+      "abstained": false,
+      "correct": false,
+      "studio_white_normalized": true,
+      "probabilities": {
+        "early_blight": 0.012,
+        "healthy": 0.0121,
+        "late_blight": 0.9759
+      }
+    },
+    {
+      "filename": "tomatotest12.jpg",
+      "ground_truth": "healthy",
+      "prediction": "late_blight",
+      "confidence": 0.972,
+      "entropy": 0.147,
+      "abstained": false,
+      "correct": false,
+      "studio_white_normalized": true,
+      "probabilities": {
+        "early_blight": 0.0119,
+        "healthy": 0.0161,
+        "late_blight": 0.972
+      }
+    }
+  ]
+}

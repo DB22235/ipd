@@ -1,0 +1,28 @@
+{
+  "model_name": "tomato_student_supervised_v1_mobilenetv3_large",
+  "version": "1.0.0",
+  "crop": "tomato",
+  "role": "mobile_student_baseline",
+  "sha256_checksum": "d46bc118f97a70686c9ca2c03e410339dfb0a3e8a2088acf471875b6e2d7a87d",
+  "input_shape": [
+    300,
+    300,
+    3
+  ],
+  "input_dtype": "float32",
+  "classes": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "class_order": {
+    "0": "early_blight",
+    "1": "healthy",
+    "2": "late_blight"
+  },
+  "num_classes": 3,
+  "preprocessing_version": "2.0.0",
+  "preprocessing": "aspect_preserving_letterbox_rgb114",
+  "release_status": "supervised_baseline_candidate",
+  "teacher_id": "tomato_teacher_v2"
+}

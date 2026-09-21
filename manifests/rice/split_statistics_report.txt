@@ -1,0 +1,59 @@
+======================================================================
+IPD DATASET FINAL STATISTICS REPORT
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+  CROP: POTATO
+──────────────────────────────────────────────────────────────────────
+
+partition     train  val  test  TOTAL
+class_label                          
+early_blight   2054  282   291   2627
+healthy        1605  321   337   2263
+late_blight    1453  346   283   2082
+
+  Source breakdown:
+partition     train  val  test  TOTAL
+source                               
+PlantVillage   5112  949   911   6972
+
+──────────────────────────────────────────────────────────────────────
+  CROP: RICE
+──────────────────────────────────────────────────────────────────────
+
+partition    train  val  test  TOTAL
+class_label                         
+blast          674  142   144    960
+blight         891  196   197   1284
+brown_spot     846  176   178   1200
+healthy        904  122   462   1488
+
+  Source breakdown:
+partition                  train  val  test  TOTAL
+source                                            
+RiceDisease_Unknown         2411  514   519   3444
+RiceHealthyField_20190419    904  122   462   1488
+
+──────────────────────────────────────────────────────────────────────
+  CROP: TOMATO
+──────────────────────────────────────────────────────────────────────
+
+partition     train  val  test  TOTAL
+class_label                          
+early_blight    702  149   149   1000
+healthy        1117  232   236   1585
+late_blight    1329  288   284   1901
+
+  Source breakdown:
+partition     train  val  test  TOTAL
+source                               
+PlantVillage   3148  669   669   4486
+
+======================================================================
+GRAND TOTAL
+======================================================================
+  train : 11,575 images
+  val   :  2,254 images
+  test  :  2,561 images
+  TOTAL : 16,390 images
+======================================================================
