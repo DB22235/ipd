@@ -1,0 +1,139 @@
+{
+  "model_tested": "tomato_teacher_efficientnetb3_best.keras",
+  "invariance_rate": 75.0,
+  "gate_passed": false,
+  "results": [
+    {
+      "filename": "tomatotest1.webp",
+      "ground_truth": "early_blight",
+      "prediction_original": "early_blight",
+      "confidence_original": 74.66285824775696,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 78.04930806159973,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 67.66529083251953,
+      "causally_invariant": false
+    },
+    {
+      "filename": "tomatotest2.webp",
+      "ground_truth": "early_blight",
+      "prediction_original": "early_blight",
+      "confidence_original": 91.24332070350647,
+      "prediction_blurred_bg": "early_blight",
+      "confidence_blurred_bg": 49.33396279811859,
+      "prediction_darkened_bg": "early_blight",
+      "confidence_darkened_bg": 90.74912071228027,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest3.webp",
+      "ground_truth": "late_blight",
+      "prediction_original": "late_blight",
+      "confidence_original": 99.9377191066742,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 99.86807703971863,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 99.98282194137573,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest4.webp",
+      "ground_truth": "early_blight",
+      "prediction_original": "early_blight",
+      "confidence_original": 85.18185019493103,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 51.15066170692444,
+      "prediction_darkened_bg": "early_blight",
+      "confidence_darkened_bg": 62.04349398612976,
+      "causally_invariant": false
+    },
+    {
+      "filename": "tomatotest5.webp",
+      "ground_truth": "late_blight",
+      "prediction_original": "early_blight",
+      "confidence_original": 66.61451458930969,
+      "prediction_blurred_bg": "early_blight",
+      "confidence_blurred_bg": 88.96642923355103,
+      "prediction_darkened_bg": "early_blight",
+      "confidence_darkened_bg": 73.25279116630554,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest6.webp",
+      "ground_truth": "late_blight",
+      "prediction_original": "late_blight",
+      "confidence_original": 99.98121857643127,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 99.90246295928955,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 99.98760223388672,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest7.webp",
+      "ground_truth": "healthy",
+      "prediction_original": "late_blight",
+      "confidence_original": 93.95968317985535,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 96.08334302902222,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 88.98246884346008,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest8.webp",
+      "ground_truth": "healthy",
+      "prediction_original": "healthy",
+      "confidence_original": 77.95770764350891,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 58.16745162010193,
+      "prediction_darkened_bg": "healthy",
+      "confidence_darkened_bg": 88.25024962425232,
+      "causally_invariant": false
+    },
+    {
+      "filename": "tomatotest9.webp",
+      "ground_truth": "healthy",
+      "prediction_original": "late_blight",
+      "confidence_original": 92.83909201622009,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 77.05942988395691,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 86.54082417488098,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest10.webp",
+      "ground_truth": "healthy",
+      "prediction_original": "late_blight",
+      "confidence_original": 52.292656898498535,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 91.80875420570374,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 62.0363712310791,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest11.webp",
+      "ground_truth": "healthy",
+      "prediction_original": "late_blight",
+      "confidence_original": 97.5955605506897,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 94.54882144927979,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 98.90841841697693,
+      "causally_invariant": true
+    },
+    {
+      "filename": "tomatotest12.jpg",
+      "ground_truth": "healthy",
+      "prediction_original": "late_blight",
+      "confidence_original": 97.37627506256104,
+      "prediction_blurred_bg": "late_blight",
+      "confidence_blurred_bg": 98.1854796409607,
+      "prediction_darkened_bg": "late_blight",
+      "confidence_darkened_bg": 98.60119223594666,
+      "causally_invariant": true
+    }
+  ]
+}
